@@ -5,7 +5,7 @@ interface comment {
     text: string;
 }
 
-interface postProps {
+interface PostProps {
     username: string;
     location: string;
     pfpUrl: string;
@@ -16,7 +16,7 @@ interface postProps {
     comments: comment [];
 }
 
-class Post extends React.Component<postProps> {
+class Post extends React.Component<PostProps> {
     render() {
         return (
             <div className="post">
@@ -72,7 +72,13 @@ class Post extends React.Component<postProps> {
                     <div className="comment-input">
                         <div className="cont">
                             <div className="left">
-                                <input type="text" placeholder="Add a comment..." />
+                                <input 
+                                    type="text" 
+                                    placeholder="Add a comment..."
+                                    autoComplete="false"
+                                    autoCapitalize="false"
+                                    autoCorrect="false"
+                                />
                             </div>
                             <div className="right">
                                 <a href="#">Post</a>

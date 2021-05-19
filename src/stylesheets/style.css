@@ -345,8 +345,7 @@ body {
 .main-container .posts-stories .posts .post .post-comments .buttons-header {
   width: 95%;
   margin: auto;
-  margin-top: .7em;
-  margin-bottom: .7em;
+  padding-top: .7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

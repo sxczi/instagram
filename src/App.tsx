@@ -2,14 +2,14 @@ import React from 'react';
 import "./stylesheets/style.css";
 
 import InstagramNavBar from './components/InstagramNavBar';
-import InstagramBodyContainer from './components/InstagramBodyContainer';
+import InstagramHomePage from './components/InstagramHomePage';
 
 class App extends React.Component {
   render() {
     return (
       <div>
         <InstagramNavBar />
-        <InstagramBodyContainer />
+        <InstagramHomePage />
       </div>
     )
   }
