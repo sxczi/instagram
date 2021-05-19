@@ -40,6 +40,7 @@ class InstagramBodyContainer extends React.Component {
                             }
                             ]}
                             likes="1"
+                            postDate="3 days ago"
                         />
                     </div>
                 </div>

@@ -1,6 +1,22 @@
 import React from "react";
 
-class Post extends React.Component {
+interface comment {
+    username: string;
+    text: string;
+}
+
+interface postProps {
+    username: string;
+    location: string;
+    pfpUrl: string;
+    postImageUrl: string;
+    likes: string;
+    description: string;
+    postDate: string;
+    comments: comment [];
+}
+
+class Post extends React.Component<postProps> {
     render() {
         return (
             <div className="post">
@@ -50,7 +66,7 @@ class Post extends React.Component {
                                     ))
                                 }
                             </div>
-                            <p id="post-date">3 hours ago</p>
+                            <p id="post-date">{this.props.postDate}</p>
                         </div>
                     </div>
                     <div className="comment-input">
