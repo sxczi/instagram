@@ -4,6 +4,8 @@ import Post from "./post"
 import Story from "./story";
 import Suggestion from "./suggestion";
 
+const dummypic = "pfp.jpg"
+
 class InstagramHomePage extends React.Component {
     render() {
         return (
@@ -13,33 +15,38 @@ class InstagramHomePage extends React.Component {
                         <div className="container">
                             <Story 
                                 username="user"
-                                pfpUrl="https://i.redd.it/kg5onmo1nib21.jpg"
+                                pfpUrl={dummypic}
                                 storyNew={true}
                             />
                             <Story
                                 username="person"
-                                pfpUrl="https://pbs.twimg.com/profile_images/1366502091448078336/WCnp0au4_400x400.jpg"
+                                pfpUrl={dummypic}
                                 storyNew={false}
+                            />
+                            <Story
+                                username="person"
+                                pfpUrl={dummypic}
+                                storyNew={true}
                             />
                         </div>
                     </div>
                     <div className="posts">
                         <Post 
-                            username="lara" 
+                            username="user" 
                             location="Iraq" 
-                            postImageUrl="https://pbs.twimg.com/profile_images/1366502091448078336/WCnp0au4_400x400.jpg" 
-                            pfpUrl="https://pbs.twimg.com/profile_images/1366502091448078336/WCnp0au4_400x400.jpg"
-                            description="lmao"
+                            postImageUrl="https://images.unsplash.com/photo-1621343722485-aa2a26d31543?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                            pfpUrl={dummypic}
+                            description="idk"
                             comments={[{
                                 username: "dogeduaa",
-                                text: "sex"
+                                text: "awesome!"
                             },
                             {
                                 username: "cheems",
-                                text: "uwu"
+                                text: "that's really great"
                             }
                             ]}
-                            likes="1"
+                            likes="56"
                             postDate="3 days ago"
                         />
                     </div>
@@ -47,10 +54,10 @@ class InstagramHomePage extends React.Component {
                 <div className="side-nav">
                     <div className="profile">
                         <div className="profile-picture">
-                            <img src="https://pbs.twimg.com/profile_images/1366502091448078336/WCnp0au4_400x400.jpg" draggable="false" />
+                            <img src={dummypic} draggable="false" />
                         </div>
                         <div className="username">
-                            <h2>aaaaaa</h2>
+                            <h2>user</h2>
                             <p>User</p>
                         </div>
                         <div className="switch">
@@ -68,8 +75,24 @@ class InstagramHomePage extends React.Component {
                         </div>
                         <div className="sug-body">
                            <Suggestion 
-                                username="suggestedUserExample"
-                                pfpUrl="https://i.redd.it/kg5onmo1nib21.jpg"
+                                username="user"
+                                pfpUrl={dummypic}
+                           />
+                           <Suggestion 
+                                username="user"
+                                pfpUrl={dummypic}
+                           />
+                           <Suggestion 
+                                username="user"
+                                pfpUrl={dummypic}
+                           />
+                           <Suggestion 
+                                username="user"
+                                pfpUrl={dummypic}
+                           />
+                           <Suggestion 
+                                username="user"
+                                pfpUrl={dummypic}
                            />
                         </div>
                     </div>

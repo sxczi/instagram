@@ -163,6 +163,14 @@ body {
   display: flex;
 }
 
+.main-container h2 {
+  cursor: pointer;
+}
+
+.main-container h2:hover {
+  text-decoration: underline;
+}
+
 .main-container .posts-stories {
   -webkit-box-flex: 2.025;
       -ms-flex: 2.025;
@@ -777,5 +785,9 @@ body {
 .main-container .side-nav .footer a {
   color: #c7c7c7;
   text-decoration: none;
+}
+
+.dms {
+  margin-top: 3.375em;
 }
 /*# sourceMappingURL=style.css.map */

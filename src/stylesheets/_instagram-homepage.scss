@@ -24,6 +24,7 @@
 }
 
 .main-container {
+    h2 { cursor: pointer; &:hover { text-decoration: underline; } }
     width: 61.5%;
     margin: auto;
     margin-top: 1.875em + 3.375em;
