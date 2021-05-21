@@ -1,8 +1,8 @@
 import React from "react";
 
-import Post from "./post"
-import Story from "./story";
-import Suggestion from "./suggestion";
+import Post from "../post"
+import Story from "../story";
+import Suggestion from "../suggestion";
 
 const dummypic = "pfp.jpg"
 

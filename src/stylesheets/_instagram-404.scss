@@ -1,0 +1,20 @@
+.Instagram404 {
+    margin-top: 3.375em + 2.1em;
+    width: 100%;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 1.28em;
+    }
+    p {
+        font-size: 16px;
+    }
+    a {
+        color: #00376b;
+        text-decoration: none;
+    }
+}

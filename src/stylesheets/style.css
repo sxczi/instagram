@@ -134,13 +134,14 @@ body {
 }
 
 .header nav .nav ul svg, .header nav .nav ul img {
-  height: 22px;
+  height: 23px;
   width: 22px;
   cursor: pointer;
 }
 
 .header nav .nav ul img {
   border-radius: 50%;
+  width: 23px;
 }
 
 .new-story img {
@@ -789,5 +790,47 @@ body {
 
 .dms {
   margin-top: 3.375em;
+}
+
+.InstagramExplore {
+  margin-top: 3.375em;
+}
+
+.InstagramActivity {
+  margin-top: 3.375em;
+}
+
+.InstagramProfile {
+  margin-top: 3.375em;
+}
+
+.Instagram404 {
+  margin-top: 5.475em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram404 h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 1.28em;
+}
+
+.Instagram404 p {
+  font-size: 16px;
+}
+
+.Instagram404 a {
+  color: #00376b;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

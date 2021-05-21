@@ -66,12 +66,13 @@
                 align-items: center;
                 list-style: none;
                 svg, img {
-                    height: 22px;
+                    height: 23px;
                     width: 22px;
                     cursor: pointer;
                 }
                 img {
                     border-radius: 50%;
+                    width: 23px;
                 }
             }
         }
