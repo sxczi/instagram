@@ -1,3 +1,55 @@
 .dms {
-    margin-top: 3.375em;
+    width: 62%;
+    height: 87.25vh;
+    margin: auto;
+    margin-top: 3.375em + 1.25em;
+    border-radius: 3px;
+    border: 1px solid $border;
+    background-color: #fff;
+    max-width: 935px;
+    display: flex;
+    align-items: center;
+    .left {
+        flex: 1.15;
+        height: 100%;
+        width: 100%;
+        border-right: 1px solid $border;
+        h1 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .right {
+        flex: 2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h1 {
+                font-size: 22px;
+                font-weight: 300;
+                margin-bottom: .25em;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 1.25em;
+            }
+            button {
+                color: white;
+                background-color: #0095F6;
+                padding: 5px 9px;
+                border: none;
+                outline: none;
+                font-weight: 500;
+                border-radius: 5px;
+            }
+        }
+    }
 }

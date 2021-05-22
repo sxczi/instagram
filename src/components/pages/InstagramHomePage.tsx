@@ -54,7 +54,7 @@ class InstagramHomePage extends React.Component {
                 <div className="side-nav">
                     <div className="profile">
                         <div className="profile-picture">
-                            <img src={dummypic} draggable="false" />
+                            <img src={dummypic} alt="" draggable="false" />
                         </div>
                         <div className="username">
                             <h2>user</h2>

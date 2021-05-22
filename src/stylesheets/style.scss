@@ -10,6 +10,8 @@ $background: #fafafa;
 body {
     background-color: $background;
     color: #262626;
+    height: 100%;
+    width: 100%;
 }
 
 @import "./instagram-navbar";

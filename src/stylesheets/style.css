@@ -7,6 +7,8 @@
 body {
   background-color: #fafafa;
   color: #262626;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
@@ -54,9 +56,18 @@ body {
           justify-content: flex-start;
 }
 
-.header nav .logo img {
-  margin-top: 0.4375em;
+.header nav .logo a {
+  margin-top: .75em;
+  width: 100%;
+  height: 100%;
+}
+
+.header nav .logo a img {
   cursor: pointer;
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .header nav .search-bar {
@@ -80,7 +91,7 @@ body {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 14px;
-  padding: .25em 5px;
+  padding: .25em 0.3125em;
   width: 200px;
   cursor: text;
   text-align: center;
@@ -100,7 +111,7 @@ body {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1px 4px;
+  padding: 0.0625em 0.25em;
 }
 
 .header nav .nav {
@@ -789,7 +800,89 @@ body {
 }
 
 .dms {
-  margin-top: 3.375em;
+  width: 62%;
+  height: 87.25vh;
+  margin: auto;
+  margin-top: 4.625em;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  max-width: 935px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dms .left {
+  -webkit-box-flex: 1.15;
+      -ms-flex: 1.15;
+          flex: 1.15;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid #dbdbdb;
+}
+
+.dms .left h1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dms .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dms .right .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dms .right .cont h1 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: .25em;
+}
+
+.dms .right .cont p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1.25em;
+}
+
+.dms .right .cont button {
+  color: white;
+  background-color: #0095F6;
+  padding: 5px 9px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 5px;
 }
 
 .InstagramExplore {

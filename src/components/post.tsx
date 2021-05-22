@@ -23,7 +23,7 @@ class Post extends React.Component<PostProps> {
                 <div className="post-header">
                     <div className="header-cont">
                         <div className="post-pfp">
-                            <img id="post-pfp" src={this.props.pfpUrl} draggable="false" />
+                            <img id="post-pfp" src={this.props.pfpUrl} alt="" draggable="false" />
                         </div>
                         <div className="post-username">
                             <h2 id="post-username">{this.props.username}</h2>
