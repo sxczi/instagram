@@ -97,7 +97,7 @@ class InstagramHomePage extends React.Component {
                         </div>
                     </div>
                     <div className="footer">
-                        <p id="top">About - Help - Press - API - Jobs - Privacy Terms - Locations - Top Accounts - Hashtags - Language</p>
+                        <p id="top">About • Help • Press • API • Jobs • Privacy Terms • Locations • Top Accounts • Hashtags • Language</p>
                         <p>© 2021 INSTAGRAM FROM <a href="https://github.com/dogeduaa">DOGEDUAA</a></p>
                     </div>
                 </div>
