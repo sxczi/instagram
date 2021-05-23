@@ -1,5 +1,5 @@
 .dms {
-    width: 62%;
+    width: 61.5%;
     height: 87.25vh;
     margin: auto;
     margin-top: 3.375em + 1.25em;
@@ -10,13 +10,38 @@
     display: flex;
     align-items: center;
     .left {
-        flex: 1.15;
+        flex: 1.2;
         height: 100%;
         width: 100%;
         border-right: 1px solid $border;
-        h1 {
-            font-size: 16px;
-            font-weight: 500;
+        .left-header {
+            border-bottom: 1px solid $border;
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .left {
+                flex: 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: none;
+                h1 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-right: .3em;
+                    margin-left: 2em;
+                }
+                svg { transform: rotate(180deg) scaleX(-1); margin-top: .25em; }
+            }
+            .right {
+                flex: .9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+            }
         }
     }
     .right {
@@ -48,6 +73,7 @@
                 border: none;
                 outline: none;
                 font-weight: 500;
+                cursor: pointer;
                 border-radius: 5px;
             }
         }
