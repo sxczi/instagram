@@ -1,3 +1,78 @@
 .InstagramActivity {
-    margin-top: 3.375em;
+    margin-top: 3.375em + 1.25em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .activity {
+        width: 26%;
+        height: 100%;
+        box-sizing: border-box;
+        border-top: 1px solid $border;
+        padding: 8px 10px;
+        .activity-head {
+            h1 {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .activity-body {
+            margin-top: .75em;
+            width: 100%;
+            .profile {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: .75em;
+                .img {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        height: 44px;
+                        width: 44px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+                .username {
+                    flex: 5;
+                    display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        h1 {
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-left: .5em;
+                        }
+                        p {
+                            font-size: 14px;
+                            margin-left: .25em;
+                        }
+                        span {
+                            font-size: 14px;
+                            color: #8e8e8e;
+                            margin-left: .3em;
+                        }
+                }
+                .follow {
+                    flex: 1;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        button {
+                            color: white;
+                            background-color: #0095F6;
+                            padding: 5px 9px;
+                            border: none;
+                            font-size: 14px;
+                            outline: none;
+                            font-weight: 500;
+                            cursor: pointer;
+                            border-radius: 5px;
+                        }
+                }
+            }
+        }
+    }
 }

@@ -947,7 +947,125 @@ body {
 }
 
 .InstagramActivity {
-  margin-top: 3.375em;
+  margin-top: 4.625em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.InstagramActivity .activity {
+  width: 26%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px solid #dbdbdb;
+  padding: 8px 10px;
+}
+
+.InstagramActivity .activity .activity-head h1 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.InstagramActivity .activity .activity-body {
+  margin-top: .75em;
+  width: 100%;
+}
+
+.InstagramActivity .activity .activity-body .profile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .75em;
+}
+
+.InstagramActivity .activity .activity-body .profile .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.InstagramActivity .activity .activity-body .profile .img img {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.InstagramActivity .activity .activity-body .profile .username {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.InstagramActivity .activity .activity-body .profile .username h1 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: .5em;
+}
+
+.InstagramActivity .activity .activity-body .profile .username p {
+  font-size: 14px;
+  margin-left: .25em;
+}
+
+.InstagramActivity .activity .activity-body .profile .username span {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin-left: .3em;
+}
+
+.InstagramActivity .activity .activity-body .profile .follow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.InstagramActivity .activity .activity-body .profile .follow button {
+  color: white;
+  background-color: #0095F6;
+  padding: 5px 9px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .InstagramProfile {
