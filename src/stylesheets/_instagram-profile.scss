@@ -1,3 +1,73 @@
 .InstagramProfile {
-    margin-top: 3.375em;
+    margin-top: 3.375em + 2em;
+    .cont {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        .left {
+            flex: 1.25;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                object-fit: contain;
+            }
+        }
+        .right {
+            flex: 3;
+            height: 100%;
+            .right-header {
+                width: 45%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+                h1 {
+                    font-size: 28px;
+                    font-weight: 400;
+                    margin-right: .75em;
+                } 
+                button {
+                    margin-right: 1em;
+                    padding: 5px 9px;
+                    border: 1px solid $border;
+                    font-weight: 500;
+                    outline: none;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                svg {
+                    cursor: pointer;
+                }
+            }
+            .followers-bar {
+                width: 45%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+                justify-content: space-between;
+                p {
+                    cursor: pointer;
+                    strong {
+                        font-weight: 500;
+                    }
+                }
+            }
+            .bio {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h1 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: .25em;
+                }
+            }
+        }
+    }
 }
