@@ -196,6 +196,7 @@ body {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   width: 100%;
+  max-width: 614px;
   padding: 0.625em 0;
   height: 6.0625em;
   display: -webkit-box;
@@ -215,6 +216,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: auto;
+}
+
+.main-container .posts-stories .stories .container::-webkit-scrollbar {
+  display: none;
 }
 
 .main-container .posts-stories .stories .container .story {
@@ -1187,6 +1193,92 @@ body {
   margin-bottom: .25em;
 }
 
+.InstagramProfile .nav {
+  border-top: 1px solid #dbdbdb;
+  width: 60%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.InstagramProfile .nav .nav-cont {
+  width: 50%;
+  margin: auto;
+}
+
+.InstagramProfile .nav .nav-cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.InstagramProfile .nav .nav-cont ul .link {
+  color: #262626;
+}
+
+.InstagramProfile .nav .nav-cont ul li {
+  padding-top: 15px;
+}
+
+.InstagramProfile .nav .nav-cont ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #8e8e8e;
+}
+
+.InstagramProfile .nav .nav-cont ul li a span {
+  color: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.InstagramProfile .nav .nav-cont ul li a svg {
+  margin-right: .4em;
+  color: #000;
+}
+
+.InstagramProfile .container {
+  text-align: center;
+}
+
+.InstagramProfile .container .channel, .InstagramProfile .container .tagged, .InstagramProfile .container .saved {
+  margin-top: 7em;
+}
+
+.InstagramProfile .container .channel h1, .InstagramProfile .container .tagged h1, .InstagramProfile .container .saved h1 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.InstagramProfile .container .channel p, .InstagramProfile .container .tagged p, .InstagramProfile .container .saved p {
+  font-size: 14px;
+  margin-bottom: 1.5em;
+}
+
+.InstagramProfile .container .channel button, .InstagramProfile .container .tagged button, .InstagramProfile .container .saved button {
+  cursor: pointer;
+  padding: 5px 16px;
+  background-color: #0095f6;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+
 .Instagram404 {
   margin-top: 5.475em;
   width: 100%;
@@ -1215,5 +1307,49 @@ body {
 .Instagram404 a {
   color: #00376b;
   text-decoration: none;
+}
+
+.footer-main {
+  font-size: 12px;
+  color: #8e8e8e;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2.5em;
+}
+
+.footer-main .cont {
+  width: 32.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer-main .cont ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.footer-main .cont ul li {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

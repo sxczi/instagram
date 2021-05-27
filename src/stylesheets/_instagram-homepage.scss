@@ -37,6 +37,7 @@
             border: 1px solid $border;
             border-radius: 3px;
             width: 100%;
+            max-width: 614px;
             padding: 0.625em 0;
             height: 6.0625em;
             display: flex;
@@ -46,6 +47,10 @@
                 margin: auto;
                 display: flex;
                 align-items: center;
+                overflow-x: auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
                 .story {
                     display: flex;
                     justify-content: center;

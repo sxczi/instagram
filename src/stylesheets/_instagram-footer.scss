@@ -1,0 +1,25 @@
+.footer-main {
+    font-size: 12px;
+    color: #8e8e8e;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5em;
+    .cont {
+        width: 32.5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin-bottom: 1em;
+            li { cursor: pointer; }
+        }
+    }
+}

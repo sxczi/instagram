@@ -70,4 +70,68 @@
             }
         }
     }
+    .nav {
+        border-top: 1px solid $border;
+        width: 60%;
+        margin: auto;
+        margin-top: 3em;
+        .nav-cont {
+            width: 50%;
+            margin: auto;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                .link {
+                    color: #262626;
+                }
+                li {
+                    padding-top: 15px;
+                    // border-top: 1.5px solid black;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #8e8e8e;
+                        span {
+                            color: inherit;
+                            font-size: 13px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                        }
+                        svg {
+                            margin-right: .4em;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        text-align: center;
+        .channel, .tagged, .saved {
+            margin-top: 7em;
+            h1 {
+                font-size: 28px;
+                font-weight: 300;
+                margin-bottom: .5em;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 1.5em;
+            }
+            button {
+                cursor: pointer;
+                padding: 5px 16px;
+                background-color: #0095f6;
+                color: #fff;
+                border-radius: 3px;
+                border: none;
+                outline: none;
+                font-weight: 500;
+            }
+        }
+    }
 }
