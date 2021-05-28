@@ -2,99 +2,105 @@ import React from "react";
 
 import Post from "../post"
 import Story from "../story";
-import Suggestion from "../suggestion";
 import SideNav from "../sidenav";
 
-const dummypic = "pfp.jpg"
+interface HomePageState {
+    posts: {
+        username: string,
+        location: string,
+        postImageUrl: string,
+        pfpUrl: string,
+        description: string,
+        comments: {
+            username: string,
+            text: string
+        }[],
+        likes: string,
+        postDate: string
+    }[],
+    stories: {
+        username: string,
+        pfpUrl: string,
+        storyNew: boolean
+    }[]
+}
 
-class InstagramHomePage extends React.Component {
+
+class InstagramHomePage extends React.Component<{}, HomePageState> {
+    state = {
+        posts: [
+            {
+                username: "",
+                location: "",
+                postImageUrl: "",
+                pfpUrl: "",
+                description: "",
+                comments: [
+                    {
+                        username: "",
+                        text: ""
+                    }
+                ],
+                likes: "",
+                postDate: ""
+            }
+        ],
+        stories: [
+            {
+                username: "",
+                pfpUrl: "",
+                storyNew: false
+            }
+        ]
+    }
+
+    async componentDidMount() {
+        const file = await fetch('/data/posts.json');
+        const posts = await file.json();
+
+        const file2 = await fetch('/data/stories.json');
+        const stories = await file2.json();
+
+        this.setState({ posts, stories  });
+        console.log(this.state)
+    }
+
     render() {
         return (
             <div className="main-container">
                 <div className="posts-stories">
                     <div className="stories">
                         <div className="container">
-                            <Story 
-                                username="user"
-                                pfpUrl={dummypic}
-                                storyNew={true}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={true}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={true}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={true}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            />
-                            <Story
-                                username="person"
-                                pfpUrl={dummypic}
-                                storyNew={false}
-                            /><Story
-                            username="person"
-                            pfpUrl={dummypic}
-                            storyNew={false}
-                        />
-                        
+                            {
+                                this.state.stories.map(story => {
+                                    return (
+                                        <Story 
+                                            username={story.username}
+                                            pfpUrl={story.pfpUrl}
+                                            storyNew={story.storyNew}
+                                        />
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className="posts">
-                        <Post 
-                            username="user" 
-                            location="Iraq" 
-                            postImageUrl="https://images.unsplash.com/photo-1621343722485-aa2a26d31543?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
-                            pfpUrl={dummypic}
-                            description="idk"
-                            comments={[{
-                                username: "dogeduaa",
-                                text: "awesome!"
-                            },
-                            {
-                                username: "cheems",
-                                text: "that's really great"
-                            }
-                            ]}
-                            likes="56"
-                            postDate="3 days ago"
-                        />
+                        {
+                            this.state.posts.map(post => {
+                                return (
+                                    <Post 
+                                        username={post.username}
+                                        location={post.location} 
+                                        postImageUrl={post.postImageUrl} 
+                                        pfpUrl={post.pfpUrl}
+                                        description={post.description}
+                                        comments={post.comments}
+                                        likes={post.likes}
+                                        postDate={post.postDate}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <SideNav />

@@ -1,7 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class InstagramNavBar extends React.Component {
+interface NavBarState {
+    data: {
+        pfpUrl: string;
+        username: string;
+        name: string;
+    }
+}
+
+class InstagramNavBar extends React.Component<{}, NavBarState> {
+    state = {
+        data: {
+            pfpUrl: "",
+            username: "",
+            name: ""
+        }
+    }
+
+    async componentDidMount() {
+        const file = await fetch('/data/profile.json');
+        const json = await file.json();
+
+        this.setState({ data: { pfpUrl: json.pfpUrl, username: json.username, name: json.name } });
+    }
+
     handleInputClick = (): void => {
         (document.getElementById("search-label") as HTMLParagraphElement).style.display = "none";
         (document.getElementById("search") as HTMLInputElement).style.display = "block";
@@ -83,7 +106,7 @@ class InstagramNavBar extends React.Component {
                                     (document.getElementById("pfp-navbar") as HTMLImageElement).style.border = "none";
                                 }}>
                                     <svg aria-label="Find People" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
-                                        <path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path>
+                                        <path clipRule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fillRule="evenodd"></path>
                                     </svg>
                                 </Link>
                             </li>
@@ -100,11 +123,11 @@ class InstagramNavBar extends React.Component {
                             </li>
                             <li>
                                 <Link to="/profile/" onClick={() => {
-                                    document.title = "user (@user) • Instagram";
+                                    document.title = `${this.state.data.name} (@${this.state.data.username}) • Instagram`;
                                     (document.getElementById("pfp-navbar") as HTMLImageElement).style.padding = ".5px";
                                     (document.getElementById("pfp-navbar") as HTMLImageElement).style.border = "1.5px solid #262626";
                                 }}>
-                                    <img id="pfp-navbar" src="./pfp.jpg" alt="" draggable="false" />
+                                    <img id="pfp-navbar" src={this.state.data.pfpUrl} alt="" draggable="false" />
                                 </Link>
                             </li>
                         </ul>

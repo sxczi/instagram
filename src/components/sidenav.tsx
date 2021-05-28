@@ -1,19 +1,53 @@
 import React from "react";
 import Suggestion from "./suggestion";
 
-const dummypic = "pfp.jpg";
+interface SideNavState {
+    suggestions: {
+        username: string,
+        pfpUrl: string
+    }[],
+    profile: {
+        username: string,
+        name: string,
+        pfpUrl: string
+    }
+}
 
-class SideNav extends React.Component {
+class SideNav extends React.Component<{}, SideNavState> {
+    state = {
+        suggestions: [
+            {
+                username: "",
+                pfpUrl: ""
+            }
+        ],
+        profile: {
+            username: "",
+            name: "",
+            pfpUrl: ""
+        }
+    }
+
+    async componentDidMount() {
+        const file = await fetch('/data/suggestions.json');
+        const suggestions = await file.json();
+
+        const file2 = await fetch('/data/profile.json');
+        const profile = await file2.json();
+
+        this.setState({ suggestions , profile });
+    }
+
     render() {
         return (
             <div className="side-nav">
                     <div className="profile">
                         <div className="profile-picture">
-                            <img src={dummypic} alt="" draggable="false" />
+                            <img src={this.state.profile.pfpUrl} alt="" draggable="false" />
                         </div>
                         <div className="username">
-                            <h2>user</h2>
-                            <p>User</p>
+                            <h2>{this.state.profile.username}</h2>
+                            <p>{this.state.profile.name}</p>
                         </div>
                         <div className="switch">
                             <a href="#">Switch</a>
@@ -29,26 +63,16 @@ class SideNav extends React.Component {
                             </div>
                         </div>
                         <div className="sug-body">
-                           <Suggestion 
-                                username="user"
-                                pfpUrl={dummypic}
-                           />
-                           <Suggestion 
-                                username="user"
-                                pfpUrl={dummypic}
-                           />
-                           <Suggestion 
-                                username="user"
-                                pfpUrl={dummypic}
-                           />
-                           <Suggestion 
-                                username="user"
-                                pfpUrl={dummypic}
-                           />
-                           <Suggestion 
-                                username="user"
-                                pfpUrl={dummypic}
-                           />
+                           {
+                               this.state.suggestions.map(suggestion => {
+                                   return (
+                                        <Suggestion 
+                                            username={suggestion.username}
+                                            pfpUrl={suggestion.pfpUrl}
+                                        />
+                                   )
+                               })
+                           }
                         </div>
                     </div>
                     <div className="footer">
