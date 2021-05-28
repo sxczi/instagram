@@ -1,8 +1,34 @@
 import React from "react";
 
 import Profile from "../activityProfile";
+import Footer from "../footer";
 
-class InstagramActivity extends React.Component {
+interface ActivityState {
+    activity: {
+        date: string;
+        username: string;
+        pfpUrl: string;
+    }[];
+}
+
+class InstagramActivity extends React.Component<{}, ActivityState> {
+    state = {
+        activity: [
+            {
+                date: "loading..",
+                username: "loading..",
+                pfpUrl: "loading.."
+            }
+        ]
+    }
+
+    async componentDidMount() {
+        const file = await fetch('/data/activity.json');
+        const activity = await file.json();
+
+        this.setState({ activity })
+    }
+
     render() {
         return (
             <div className="InstagramActivity">
@@ -11,18 +37,20 @@ class InstagramActivity extends React.Component {
                         <h1>This Week</h1>
                     </div>
                     <div className="activity-body">
-                        <Profile 
-                            date="1d"
-                            username="null"
-                            pfpUrl="https://images.unsplash.com/photo-1621840090029-08b00c831808?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-                        />
-                        <Profile 
-                            date="2w"
-                            username="carl"
-                            pfpUrl="https://images.unsplash.com/photo-1621840090029-08b00c831808?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-                        />
+                       {
+                           this.state.activity.map(profile => {
+                               return (
+                                    <Profile 
+                                        date={profile.date}
+                                        username={profile.username}
+                                        pfpUrl={profile.pfpUrl}
+                                    />
+                               )
+                           })
+                       }
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

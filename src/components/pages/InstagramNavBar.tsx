@@ -12,7 +12,7 @@ interface NavBarState {
 class InstagramNavBar extends React.Component<{}, NavBarState> {
     state = {
         data: {
-            pfpUrl: "",
+            pfpUrl: "/pfp.jpg",
             username: "",
             name: ""
         }

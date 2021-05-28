@@ -1,10 +1,11 @@
 import React from "react";
+import Footer from "../footer";
 
 class InstagramExplore extends React.Component {
     render() {
         return (
             <div className="InstagramExplore">
-                <h1>Explore</h1>
+                <Footer/>
             </div>
         )
     }

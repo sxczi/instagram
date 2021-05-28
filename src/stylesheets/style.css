@@ -972,13 +972,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .InstagramActivity .activity {
-  width: 26%;
+  max-width: 100%;
+  width: 32.5%;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1269,22 +1274,22 @@ body {
   text-align: center;
 }
 
-.InstagramProfile .container .channel, .InstagramProfile .container .tagged, .InstagramProfile .container .saved {
+.InstagramProfile .container .channel, .InstagramProfile .container .tagged, .InstagramProfile .container .saved, .InstagramProfile .container .posts {
   margin-top: 7em;
 }
 
-.InstagramProfile .container .channel h1, .InstagramProfile .container .tagged h1, .InstagramProfile .container .saved h1 {
+.InstagramProfile .container .channel h1, .InstagramProfile .container .tagged h1, .InstagramProfile .container .saved h1, .InstagramProfile .container .posts h1 {
   font-size: 28px;
   font-weight: 300;
   margin-bottom: .5em;
 }
 
-.InstagramProfile .container .channel p, .InstagramProfile .container .tagged p, .InstagramProfile .container .saved p {
+.InstagramProfile .container .channel p, .InstagramProfile .container .tagged p, .InstagramProfile .container .saved p, .InstagramProfile .container .posts p {
   font-size: 14px;
   margin-bottom: 1.5em;
 }
 
-.InstagramProfile .container .channel button, .InstagramProfile .container .tagged button, .InstagramProfile .container .saved button {
+.InstagramProfile .container .channel button, .InstagramProfile .container .tagged button, .InstagramProfile .container .saved button, .InstagramProfile .container .posts button {
   cursor: pointer;
   padding: 5px 16px;
   background-color: #0095f6;
@@ -1337,6 +1342,7 @@ body {
 
 .footer-main .cont {
   width: 32.5%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

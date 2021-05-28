@@ -18,13 +18,13 @@ class SideNav extends React.Component<{}, SideNavState> {
         suggestions: [
             {
                 username: "",
-                pfpUrl: ""
+                pfpUrl: "/pfp.jpg"
             }
         ],
         profile: {
             username: "",
             name: "",
-            pfpUrl: ""
+            pfpUrl: "/pfp.jpg"
         }
     }
 
