@@ -33,7 +33,7 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
                 username: "",
                 location: "",
                 postImageUrl: "",
-                pfpUrl: "/pfp.jpg",
+                pfpUrl: "",
                 description: "",
                 comments: [
                     {
@@ -48,7 +48,7 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
         stories: [
             {
                 username: "",
-                pfpUrl: "/pfp.jpg",
+                pfpUrl: "",
                 storyNew: false
             }
         ]
@@ -61,7 +61,8 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
         const file2 = await fetch('/data/stories.json');
         const stories = await file2.json();
 
-        this.setState({ posts, stories });
+        this.setState({ posts, stories  });
+        console.log(this.state)
     }
 
     render() {
