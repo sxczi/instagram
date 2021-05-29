@@ -55,6 +55,8 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
     }
 
     async componentDidMount() {
+        document.title = "Instagram";
+
         const file = await fetch('/data/posts.json');
         const posts = await file.json();
 
