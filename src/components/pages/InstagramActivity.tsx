@@ -17,7 +17,7 @@ class InstagramActivity extends React.Component<{}, ActivityState> {
             {
                 date: "",
                 username: "",
-                pfpUrl: "/pfp.jpg"
+                pfpUrl: "/assets/pfp.jpg"
             }
         ]
     }

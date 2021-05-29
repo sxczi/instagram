@@ -1,9 +1,9 @@
 {
   "short_name": "Instagram",
-  "name": "Instagram clone",
+  "name": "Instagram clone by @uwuxia",
   "icons": [
     {
-      "src": "./1024px-Instagram_icon.png",
+      "src": "/assets/favicon.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
