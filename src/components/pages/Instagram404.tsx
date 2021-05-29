@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import Footer from "../footer";
 
 class Instagram404 extends React.Component {
+    componentDidMount() {
+        document.title = "Page Not Found • Instagram";
+    }
+
     render() {
         return (
             <div className="Instagram404">

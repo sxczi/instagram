@@ -1360,7 +1360,7 @@ body {
   margin: auto;
   position: absolute;
   bottom: 0;
-  margin-bottom: 2.5em;
+  margin-bottom: 3em;
 }
 
 .footer-main p {
@@ -1395,7 +1395,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .footer-main .cont ul li {

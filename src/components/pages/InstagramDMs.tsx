@@ -1,6 +1,10 @@
 import React from "react";
 
 class InstagramDMs extends React.Component {
+    componentDidMount() {
+        document.title = "Inbox • Direct";
+    }
+
     render() {
         return (
             <div className="dms">

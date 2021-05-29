@@ -44,6 +44,7 @@ class InstagramProfile extends React.Component<{}, ProfileState> {
         const json = await file.json();
 
         this.setState({ profile: json });
+        document.title = document.title = `${this.state.profile.name} (@${this.state.profile.username}) • Instagram`;
     }
 
     handleNavStyling = (e: any) => {
