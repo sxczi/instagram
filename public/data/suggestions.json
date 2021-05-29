@@ -1,22 +1,22 @@
 [
     {
         "username": "user",
-        "pfpUrl": "pfp.jpg"
+        "pfpUrl": "/assets/pfp.jpg"
     },
     {
         "username": "user",
-        "pfpUrl": "pfp.jpg"
+        "pfpUrl": "/assets/pfp.jpg"
     },
     {
         "username": "user",
-        "pfpUrl": "pfp.jpg"
+        "pfpUrl": "/assets/pfp.jpg"
     },
     {
         "username": "user",
-        "pfpUrl": "pfp.jpg"
+        "pfpUrl": "/assets/pfp.jpg"
     },
     {
         "username": "user",
-        "pfpUrl": "pfp.jpg"
+        "pfpUrl": "/assets/pfp.jpg"
     }
 ]

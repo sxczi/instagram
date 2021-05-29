@@ -29,7 +29,7 @@ interface ProfileState {
 class InstagramProfile extends React.Component<{}, ProfileState> {
     state = {
         profile: {
-            pfpUrl: "/pfp.jpg",
+            pfpUrl: "/assets/pfp.jpg",
             username: "",
             name: "",
             followers: "0",
