@@ -1,8 +1,25 @@
 import React from "react";
 
-class InstagramDMs extends React.Component {
-    componentDidMount() {
+interface DmState {
+    profile: {
+        username: string;
+    }
+}
+
+class InstagramDMs extends React.Component<{}, DmState> {
+    state = {
+        profile: {
+            username: ''
+        }
+    }
+
+    async componentDidMount() {
         document.title = "Inbox • Direct";
+
+        const file = await fetch("/data/profile.json");
+        const profile = await file.json();
+
+        this.setState({ profile });
     }
 
     render() {
@@ -11,7 +28,7 @@ class InstagramDMs extends React.Component {
                 <div className="left">
                     <div className="left-header">
                         <div className="left">
-                            <h1>user</h1>
+                            <h1>{this.state.profile.username}</h1>
                             <svg aria-label="Down Chevron Icon" fill="#262626" height="20" viewBox="0 0 48 48" width="20"><path d="M40 33.5c-.4 0-.8-.1-1.1-.4L24 18.1l-14.9 15c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l16-16c.6-.6 1.5-.6 2.1 0l16 16c.6.6.6 1.5 0 2.1-.3.3-.7.4-1.1.4z"></path></svg>
                         </div>
                         <div className="right">
