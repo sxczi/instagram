@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 interface comment {
     username: string;
     text: string;
@@ -26,7 +28,7 @@ class Post extends React.Component<PostProps> {
                             <img id="post-pfp" src={this.props.pfpUrl} alt="" draggable="false" />
                         </div>
                         <div className="post-username">
-                            <h2 id="post-username">{this.props.username}</h2>
+                            <h2 id="post-username"><Link to={this.props.username}>{this.props.username}</Link></h2>
                             <p id="post-location">{this.props.location}</p>
                         </div>
                         <div className="post-more">

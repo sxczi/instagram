@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 interface StoryProps {
     pfpUrl: string;
     username: string;
@@ -11,7 +13,7 @@ class Story extends React.Component<StoryProps> {
         return (
             <div className={this.props.storyNew ? "story new-story" : "story"}>
                 <img src={this.props.pfpUrl} alt="" />
-                <p>{this.props.username}</p>
+                <p><Link to={this.props.username}>{this.props.username}</Link></p>
             </div>
         )
     }

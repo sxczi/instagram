@@ -33,7 +33,7 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
                 username: "",
                 location: "",
                 postImageUrl: "",
-                pfpUrl: "",
+                pfpUrl: "/pfp.jpg",
                 description: "",
                 comments: [
                     {
@@ -48,7 +48,7 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
         stories: [
             {
                 username: "",
-                pfpUrl: "",
+                pfpUrl: "/pfp.jpg",
                 storyNew: false
             }
         ]

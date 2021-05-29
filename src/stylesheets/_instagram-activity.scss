@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     .activity {
-        width: 26%;
+        width: 30%;
         height: 100%;
         box-sizing: border-box;
         border-top: 1px solid $border;
@@ -45,6 +45,13 @@
                             font-size: 14px;
                             font-weight: 500;
                             margin-left: .5em;
+                            a {
+                                text-decoration: none;
+                                color: inherit;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
                         }
                         p {
                             font-size: 14px;
