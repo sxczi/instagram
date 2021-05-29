@@ -34,7 +34,7 @@ class Post extends React.Component<PostProps> {
                         </div>
                     </div>
                 </div>
-                <div className="post-image">
+                <div className="post-image" id="postimg">
                     <img src={this.props.postImageUrl} alt="" />
                 </div>
                 <div className="post-comments">
