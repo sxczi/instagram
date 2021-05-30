@@ -1534,9 +1534,9 @@ body {
     width: 100%;
   }
   .main-container #postimg {
-    height: 500px;
+    height: 550px;
   }
-  .main-container .post .post-header .header-cont .post-pfp {
+  .main-container .post .post-header .header-cont .post-pfp, .main-container .post .post-header .header-cont .post-more {
     -webkit-box-flex: 1.4 !important;
         -ms-flex: 1.4 !important;
             flex: 1.4 !important;

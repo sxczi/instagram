@@ -143,12 +143,12 @@
         margin-top: 3.375em;
         width: 100%;
         #postimg {
-            height: 500px;
+            height: 550px;
         }
         .post {
             .post-header {
                 .header-cont {
-                    .post-pfp {
+                    .post-pfp, .post-more {
                         flex: 1.4 !important;
                     }
                 }
