@@ -982,7 +982,12 @@ body {
 }
 
 .InstagramExplore {
-  margin-top: 3.375em;
+  margin-top: 6.375em;
+  text-align: center;
+}
+
+.InstagramExplore h3 {
+  font-weight: 500;
 }
 
 .InstagramActivity {
