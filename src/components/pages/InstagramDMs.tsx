@@ -1,16 +1,31 @@
 import React from "react";
+import Chat from "../chat";
 
 interface DmState {
     profile: {
         username: string;
-    }
+    },
+    chatList: {
+        username: string;
+        pfpUrl: string;
+        message: string;
+        date: string;
+    }[];
 }
 
 class InstagramDMs extends React.Component<{}, DmState> {
     state = {
         profile: {
             username: ''
-        }
+        },
+        chatList: [
+            {
+                username: "",
+                pfpUrl: "",
+                date: "1d",
+                message: "loading.."
+            }
+        ]
     }
 
     async componentDidMount() {
@@ -19,7 +34,10 @@ class InstagramDMs extends React.Component<{}, DmState> {
         const file = await fetch("/data/profile.json");
         const profile = await file.json();
 
-        this.setState({ profile });
+        const dms = await fetch("/data/direct-messages.json");
+        const chatList = await dms.json();
+
+        this.setState({ profile, chatList });
     }
 
     render() {
@@ -36,7 +54,18 @@ class InstagramDMs extends React.Component<{}, DmState> {
                         </div>
                     </div>
                     <div className="chats-list">
-                        
+                        {
+                            this.state.chatList.map(chat => {
+                                return (
+                                    <Chat 
+                                        username={chat.username}
+                                        message={chat.message}
+                                        pfpUrl={chat.pfpUrl}
+                                        date={chat.date}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className="right" id="dms-right">
