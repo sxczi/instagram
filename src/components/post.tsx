@@ -63,7 +63,7 @@ class Post extends React.Component<PostProps> {
                                     this.props.comments.map(comment => (
                                         <div className="comment-preview">
                                             <h2 id="post-desc-username">{comment.username}</h2>
-                                            <p>{comment.text}</p>
+                                            <p>{comment.text.length > 61 ? comment.text.substring(0, 50) + "..." : comment.text}</p>
                                         </div>
                                     ))
                                 }

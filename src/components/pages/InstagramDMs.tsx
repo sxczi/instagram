@@ -25,7 +25,7 @@ class InstagramDMs extends React.Component<{}, DmState> {
     render() {
         return (
             <div className="dms">
-                <div className="left">
+                <div className="left" id="dms-left">
                     <div className="left-header">
                         <div className="left">
                             <h1>{this.state.profile.username}</h1>
@@ -39,7 +39,7 @@ class InstagramDMs extends React.Component<{}, DmState> {
                         
                     </div>
                 </div>
-                <div className="right">
+                <div className="right" id="dms-right">
                     <div className="cont">
                         <h1>Your Messages</h1>
                         <p>Send private photos and messages to a friend or group.</p>
