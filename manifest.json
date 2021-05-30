@@ -1,0 +1,16 @@
+{
+  "short_name": "Instagram",
+  "name": "Instagram clone by @uwuxia",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "background_color": "#ffffff"
+}
