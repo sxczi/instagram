@@ -26,7 +26,7 @@ class InstagramActivity extends React.Component<{}, ActivityState> {
         const file = await fetch('/data/activity.json');
         const activity = await file.json();
 
-        this.setState({ activity })
+        this.setState({ activity });
     }
 
     render() {

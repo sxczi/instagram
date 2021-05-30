@@ -64,7 +64,6 @@ class InstagramHomePage extends React.Component<{}, HomePageState> {
         const stories = await file2.json();
 
         this.setState({ posts, stories  });
-        console.log(this.state)
     }
 
     render() {
