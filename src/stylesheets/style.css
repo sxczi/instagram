@@ -1571,6 +1571,10 @@ body {
   .InstagramActivity .activity {
     width: 60%;
   }
+  .dms .left .chats-list .chat .left img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -1676,6 +1680,14 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .dms .left .chats-list .chat .left {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .header nav .nav ul {
     width: 100%;
@@ -1708,6 +1720,16 @@ body {
   .dms #dms-right button {
     font-size: 11px;
     padding: 4px 6px;
+  }
+  .dms .left .chats-list .chat .left img {
+    height: 40px;
+    width: 40px;
+  }
+  .dms .left .chats-list .chat .right h1 {
+    font-size: 12px;
+  }
+  .dms .left .chats-list .chat .right p {
+    font-size: 12px;
   }
   .InstagramActivity .activity {
     width: 90%;

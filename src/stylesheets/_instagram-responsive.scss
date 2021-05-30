@@ -100,6 +100,22 @@
             width: 60%;
         }
     }
+
+    .dms {
+        .left {
+            .chats-list {
+                .chat {
+                    .left {
+                        img {
+                            height: 40px;
+                            width: 40px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -166,7 +182,6 @@
             ul {
                 flex-wrap: wrap;
                 margin-bottom: .5em;
-                // flex-direction: column;
                 li {
                     margin-right: 1em;
                     margin-bottom: .5em;
@@ -248,6 +263,20 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .dms {
+        .left {
+            .chats-list {
+                .chat {
+                    .left {
+                        flex: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 400px) {
     .header nav {
         .nav {
@@ -289,6 +318,27 @@
             button {
                 font-size: 11px;
                 padding: 4px 6px;
+            }
+        }
+
+        .left {
+            .chats-list {
+                .chat {
+                    .left {
+                        img {
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                    .right {
+                        h1 {
+                            font-size: 12px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
         }
     }
