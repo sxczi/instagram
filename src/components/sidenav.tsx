@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Suggestion from "./suggestion";
 
 interface SideNavState {
@@ -46,7 +47,7 @@ class SideNav extends React.Component<{}, SideNavState> {
                             <img src={this.state.profile.pfpUrl} alt="" draggable="false" />
                         </div>
                         <div className="username">
-                            <h2>{this.state.profile.username}</h2>
+                            <h2><Link to='/profile/' style={{ color: 'black', textDecoration: 'none' }}>{this.state.profile.username}</Link></h2>
                             <p>{this.state.profile.name}</p>
                         </div>
                         <div className="switch">

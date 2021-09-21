@@ -15,6 +15,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Profile from './components/profile';
 
 class App extends React.Component {
   render() {
@@ -25,10 +26,11 @@ class App extends React.Component {
             <Switch>
                 <Route exact path="/" component={InstagramHomePage} />
                 <Route path="/direct/inbox/" component={InstagramDMs} />
-                <Route path="/accounts/activity/" component={InstagramActivity} />
-                <Route path="/explore/" component={InstagramExplore} />
+                <Route exact path="/accounts/activity/" component={InstagramActivity} />
+                <Route exact path="/explore/" component={InstagramExplore} />
                 <Route path="/profile/" component={InstagramProfile} />
-                <Route component={Instagram404} />
+                <Route path="/:username" component={Profile} />
+                <Route path="*" component={Instagram404} />
             </Switch>
         </div>
       </Router>

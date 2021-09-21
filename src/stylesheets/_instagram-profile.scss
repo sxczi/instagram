@@ -27,9 +27,18 @@
                 margin-bottom: 1em;
                 h1 {
                     font-size: 28px;
-                    font-weight: 400;
+                    color: rgb(38, 38, 38);
+                    font-weight: 300;
                     margin-right: .75em;
                 } 
+                .follow {
+                    background-color: rgb(0, 149, 246);
+                    color: white;
+                    border: none;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                }
                 button {
                     margin-right: 1em;
                     padding: 5px 9px;

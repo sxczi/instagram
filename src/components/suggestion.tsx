@@ -15,7 +15,7 @@ class Suggestion extends React.Component<SuggestionProps> {
                     <img src={this.props.pfpUrl} alt="" draggable="false" />
                 </div>
                 <div className="username">
-                    <h2><Link to={"/" + this.props.username}>{this.props.username.length > 17 ? this.props.username.substring(0, 15) + ".." : this.props.username}</Link></h2>
+                    <h2><Link to={"/" + this.props.username + "/"}>{this.props.username.length > 17 ? this.props.username.substring(0, 15) + ".." : this.props.username}</Link></h2>
                     <p>Instagram recommended</p>
                 </div>
                 <div className="follow">

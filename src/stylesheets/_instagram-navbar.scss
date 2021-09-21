@@ -36,6 +36,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            #search-label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    margin-right: .25em;
+                }
+            }
             .search {
                 background-color: $background;
                 color: #8e8e8e;
@@ -46,7 +54,7 @@
                 width: 200px;
                 cursor: text;
                 text-align: center;
-                p { font-weight: 400; }
+                p { font-weight: 300; }
                 input {
                     display: none;
                     width: 100%;

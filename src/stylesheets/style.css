@@ -86,6 +86,22 @@ body {
           justify-content: center;
 }
 
+.header nav .search-bar #search-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header nav .search-bar #search-label svg {
+  margin-right: .25em;
+}
+
 .header nav .search-bar .search {
   background-color: #fafafa;
   color: #8e8e8e;
@@ -99,7 +115,7 @@ body {
 }
 
 .header nav .search-bar .search p {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .header nav .search-bar .search input {
@@ -1071,11 +1087,81 @@ body {
 
 .InstagramExplore {
   margin-top: 6.375em;
+}
+
+.InstagramExplore .explore-posts {
+  width: 65%;
+  margin: auto;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.InstagramExplore .explore-posts .explore-post {
+  margin-bottom: 1.5em;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.InstagramExplore .explore-posts .explore-post img {
+  width: 292.98px;
+  border-radius: 1px;
+  height: 292.98px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-explore {
+  font-size: 12px;
+  color: #8e8e8e;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.footer-explore p {
+  font-size: 12px !important;
+}
+
+.footer-explore .cont {
+  width: 32.5%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
-.InstagramExplore h3 {
-  font-weight: 500;
+.footer-explore .cont ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+
+.footer-explore .cont ul li {
+  cursor: pointer;
 }
 
 .InstagramActivity {
@@ -1090,11 +1176,10 @@ body {
 }
 
 .InstagramActivity .activity {
-  width: 30%;
+  width: 31.5%;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-top: 1px solid #dbdbdb;
   padding: 8px 10px;
 }
 
@@ -1269,8 +1354,18 @@ body {
 
 .InstagramProfile .cont .right .right-header h1 {
   font-size: 28px;
-  font-weight: 400;
+  color: #262626;
+  font-weight: 300;
   margin-right: .75em;
+}
+
+.InstagramProfile .cont .right .right-header .follow {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
 }
 
 .InstagramProfile .cont .right .right-header button {

@@ -28,7 +28,7 @@ class Post extends React.Component<PostProps> {
                             <img id="post-pfp" src={this.props.pfpUrl} alt="" draggable="false" />
                         </div>
                         <div className="post-username">
-                            <h2 id="post-username"><Link to={this.props.username}>{this.props.username}</Link></h2>
+                            <h2 id="post-username"><Link to={this.props.username + '/'}>{this.props.username}</Link></h2>
                             <p id="post-location">{this.props.location}</p>
                         </div>
                         <div className="post-more">
@@ -62,7 +62,7 @@ class Post extends React.Component<PostProps> {
                                 {
                                     this.props.comments.map(comment => (
                                         <div className="comment-preview">
-                                            <h2 id="post-desc-username">{comment.username}</h2>
+                                            <h2 id="post-desc-username"><Link style={{ color: 'black' }} to={comment.username + "/"}>{comment.username}</Link></h2>
                                             <p>{comment.text.length > 61 ? comment.text.substring(0, 50) + "..." : comment.text}</p>
                                         </div>
                                     ))

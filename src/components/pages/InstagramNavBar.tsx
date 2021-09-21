@@ -58,12 +58,12 @@ class InstagramNavBar extends React.Component<{}, NavBarState> {
                             (document.getElementById("pfp-navbar") as HTMLImageElement).style.padding = "0";
                             (document.getElementById("pfp-navbar") as HTMLImageElement).style.border = "none";
                         }}>
-                            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" draggable="false" alt="" />
+                            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" height="29px" width="103px" draggable="false" alt="" />
                         </Link>
                     </div>
                     <div className="search-bar">
                         <div className="search" onClick={this.handleInputClick}>
-                            <p id="search-label">Search</p>
+                            <p id="search-label"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" style={{ fill: '#8e8e8e', fontWeight: 600 }}><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg> <span>Search</span></p>
                             <input 
                                 id="search"
                                 type="text"
