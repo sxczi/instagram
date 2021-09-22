@@ -1869,7 +1869,7 @@ body {
 }
 
 .Instagram-post .post-details .comments {
-  overflow: scroll;
+  overflow: auto;
   height: 62.5%;
   border-bottom: 1px solid #dbdbdb;
 }
