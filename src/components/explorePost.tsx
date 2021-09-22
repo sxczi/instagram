@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 interface PropTypes {
   imgUrl: string;
   postId: string;
@@ -13,7 +11,7 @@ class Post extends React.Component<PropTypes> {
   render() {
     return (
       <div className="explore-post">
-        <Link to={`/p/${this.props.postId}/`}>
+        <a href={`/p/${this.props.postId}/`}>
           <img src={this.props.imgUrl} alt="" />
           <div className="img-overlay">
             <div className="center-text">
@@ -51,7 +49,7 @@ class Post extends React.Component<PropTypes> {
               </span>
             </div>
           </div>
-        </Link>
+        </a>
       </div>
     );
   }
