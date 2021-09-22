@@ -29,6 +29,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .header nav {
@@ -208,6 +209,7 @@ body {
   -webkit-box-flex: 2.025;
       -ms-flex: 2.025;
           flex: 2.025;
+  max-width: 600px;
 }
 
 .main-container .posts-stories .stories {
@@ -272,6 +274,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 5px;
+  border: 3px solid #dbdbdb;
 }
 
 .main-container .posts-stories .stories .container .story p a {
@@ -1108,8 +1111,16 @@ body {
 
 .InstagramExplore .explore-posts .explore-post {
   margin-bottom: 1.5em;
+  position: relative;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+  cursor: pointer;
+}
+
+.InstagramExplore .explore-posts .explore-post:hover .img-overlay {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .InstagramExplore .explore-posts .explore-post img {
@@ -1118,6 +1129,31 @@ body {
   height: 292.98px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.InstagramExplore .explore-posts .explore-post .img-overlay {
+  display: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.InstagramExplore .explore-posts .explore-post .img-overlay span {
+  margin-left: 1em;
+  font-weight: 600;
 }
 
 .footer-explore {
@@ -1511,6 +1547,70 @@ body {
   font-weight: 500;
 }
 
+.InstagramProfile .u-profile-posts {
+  width: 65%;
+  margin: 1.5em auto;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.InstagramProfile .u-profile-posts .explore-post {
+  margin-bottom: 1.5em;
+  position: relative;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  cursor: pointer;
+}
+
+.InstagramProfile .u-profile-posts .explore-post:hover .img-overlay {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.InstagramProfile .u-profile-posts .explore-post img {
+  width: 293px;
+  border-radius: 1px;
+  height: 293px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.InstagramProfile .u-profile-posts .explore-post .img-overlay {
+  display: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.InstagramProfile .u-profile-posts .explore-post .img-overlay span {
+  margin-left: 1em;
+  font-weight: 600;
+}
+
 .Instagram404 {
   margin-top: 5.475em;
   width: 100%;
@@ -1537,9 +1637,10 @@ body {
   font-size: 16px;
 }
 
-.Instagram404 a {
+.Instagram404 span {
   color: #00376b;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-main {
@@ -1586,6 +1687,337 @@ body {
 
 .footer-main .cont ul li {
   cursor: pointer;
+}
+
+.Instagram-post {
+  margin: auto;
+  margin-top: 4.875em;
+  border-radius: 1px;
+  width: 65%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 100%;
+}
+
+.Instagram-post .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Instagram-post .post-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-left: none;
+}
+
+.Instagram-post .post-details .top {
+  height: 4.5em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.Instagram-post .post-details .top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.Instagram-post .post-details .top .container .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .top .container .left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.Instagram-post .post-details .top .container .left h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Instagram-post .post-details .top .container .left h2 span {
+  color: #0095f6;
+}
+
+.Instagram-post .post-details .top .container .left h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Instagram-post .post-details .top .container .left h2 a:hover {
+  text-decoration: underline;
+}
+
+.Instagram-post .post-details .top .container .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .top .container .right svg {
+  cursor: pointer;
+}
+
+.Instagram-post .post-details .comments {
+  overflow: scroll;
+  height: 62.5%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.Instagram-post .post-details .comments .comment {
+  width: 90%;
+  margin: 1em auto;
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .comments .comment .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Instagram-post .post-details .comments .comment .right {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-top .left,
+.Instagram-post .post-details .comments .comment .right .comment-top .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-top strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-top .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-top .right svg {
+  cursor: pointer;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.75em;
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.Instagram-post .post-details .comments .comment .right .comment-bottom .likes {
+  font-weight: 600;
+  margin-left: 0.75em;
+}
+
+.Instagram-post .post-details .bottom {
+  height: 20%;
+}
+
+.Instagram-post .post-details .bottom .top-cont {
+  width: 90%;
+  margin: 0.75em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .bottom .top-cont .left,
+.Instagram-post .post-details .bottom .top-cont .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Instagram-post .post-details .bottom .top-cont .left svg,
+.Instagram-post .post-details .bottom .top-cont .right svg {
+  cursor: pointer;
+}
+
+.Instagram-post .post-details .bottom .top-cont .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .bottom .top-cont .left svg {
+  margin-right: 0.75em;
+}
+
+.Instagram-post .post-details .bottom .top-cont .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .bottom .center-cont {
+  width: 90%;
+  margin: auto;
+}
+
+.Instagram-post .post-details .bottom .center-cont h2 {
+  font-size: 14px;
+  margin-bottom: 0.75em;
+}
+
+.Instagram-post .post-details .bottom .center-cont p {
+  font-size: 10px;
+  color: #8e8e8e;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.Instagram-post .post-details .bottom .bottom-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #dbdbdb;
+  margin-top: .5em;
+}
+
+.Instagram-post .post-details .bottom .bottom-cont .cont {
+  width: 90%;
+  margin: auto;
+  margin-top: .75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .bottom .bottom-cont .left {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.Instagram-post .post-details .bottom .bottom-cont .left input {
+  width: 100%;
+  padding: 0.5em 0.25em;
+  border: none;
+  outline: none;
+}
+
+.Instagram-post .post-details .bottom .bottom-cont .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instagram-post .post-details .bottom .bottom-cont .right a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1450px) {

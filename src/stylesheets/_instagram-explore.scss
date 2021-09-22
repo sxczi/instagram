@@ -10,12 +10,38 @@
         flex-wrap: wrap;
         .explore-post {
             margin-bottom: 1.5em;
+            position: relative;
             flex-basis: 30%;
+            cursor: pointer;
+            &:hover {
+                .img-overlay {
+                    display: flex !important;
+                }
+            }
+
             img {
                 width: 292.98px;
                 border-radius: 1px;
                 height: 292.98px;
                 object-fit: cover;
+            }
+
+            .img-overlay {
+                display: none !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    margin-left: 1em;
+                    font-weight: 600;
+                }
             }
         }
     }

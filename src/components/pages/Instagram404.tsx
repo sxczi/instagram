@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import Footer from "../footer";
 
-class Instagram404 extends React.Component {
+class Instagram404 extends React.Component<any> {
     componentDidMount() {
         document.title = "Page Not Found • Instagram";
     }
@@ -12,11 +12,13 @@ class Instagram404 extends React.Component {
         return (
             <div className="Instagram404">
                 <h1>Sorry, this page isn't available.</h1>
-                <p>The link you followed may be broken, or the page may have been removed. <Link to="/">Go back to Instagram.</Link></p>
+                <p>The link you followed may be broken, or the page may have been removed. <span onClick={() => {
+                    this.props.history.go(-1);
+                }}>Go back to Instagram.</span></p>
                 <Footer/>
             </div>
         )
     }
 }
 
-export default Instagram404;
+export default withRouter(Instagram404);

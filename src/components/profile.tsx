@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from "./footer";
 
 import Instagram404 from "./pages/Instagram404";
+import Post from './explorePost';
 
 const Profile = () => {
   const handleNavStyling = (e: any) => {
@@ -64,6 +65,15 @@ const Profile = () => {
       element.parentElement.parentElement.style.borderTop = "1px solid black";      
   }
 
+  const [posts, setPosts] = useState([
+    {
+      imgUrl: "",
+      likes: 0,
+      comments: 0,
+      postId: "",
+    },
+  ])
+
   const { username } = useParams<{ username: string }>();
   const location = useLocation();
 
@@ -80,6 +90,13 @@ const Profile = () => {
 
   useEffect(() => {
     document.title = `${profile.name} (@${username}) • Instagram`;
+
+    (async () => {
+      const data = await fetch("/data/explore.json");
+    const response = await data.json();
+  
+    setPosts(response);
+    })();
 
     switch (location.pathname) {
       case `/${username}/`:
@@ -190,9 +207,11 @@ const Profile = () => {
           </div>
           <div className="container">
             <Switch>
-              <Route path={`/${username}`} component={Posts} />
-              <Route path={`/${username}/channel/`} component={Channel} />
-              <Route path={`/${username}/tagged/`} component={Tagged} />
+              <Route exact path={`/${username}`}>
+                <Posts posts={posts} />
+              </Route>
+              <Route exact path={`/${username}/channel/`} component={Channel} />
+              <Route exact path={`/${username}/tagged/`} component={Tagged} />
             </Switch>
           </div>
           <Footer />
@@ -202,8 +221,14 @@ const Profile = () => {
   );
 };
 
-const Posts = () => {
-  return <div className="u-profile-posts"></div>;
+const Posts = (props: any) => {
+  return <div className="u-profile-posts">
+    {
+      props.posts.map((post: any) => (
+        <Post imgUrl={post.imgUrl} postId={post.postId} likes={post.likes} comments={post.comments} />
+      ))
+    }
+  </div>;
 };
 
 const Channel = () => {

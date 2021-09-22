@@ -8,6 +8,7 @@ import InstagramDMs from './components/pages/InstagramDMs';
 import InstagramActivity from './components/pages/InstagramActivity';
 import InstagramExplore from './components/pages/InstagramExplore';
 import InstagramProfile from './components/pages/InstagramProfile';
+import InstagramPost from './components/pages/InstagramPost';
 import Instagram404 from './components/pages/Instagram404';
 
 import {
@@ -29,8 +30,9 @@ class App extends React.Component {
                 <Route exact path="/accounts/activity/" component={InstagramActivity} />
                 <Route exact path="/explore/" component={InstagramExplore} />
                 <Route path="/profile/" component={InstagramProfile} />
-                <Route path="/:username" component={Profile} />
-                <Route path="*" component={Instagram404} />
+                <Route exact path="/p/:postId/" component={InstagramPost} />
+                <Route exact path="/:username" component={Profile} />
+                <Route component={Instagram404} />
             </Switch>
         </div>
       </Router>
