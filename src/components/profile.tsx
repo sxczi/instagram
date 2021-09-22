@@ -214,7 +214,24 @@ const Profile = () => {
               <Route exact path={`/${username}/tagged/`} component={Tagged} />
             </Switch>
           </div>
-          <Footer />
+          <br />
+          <div className="footer-profile">
+          <div className="cont">
+            <ul>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Jobs</li>
+              <li>Help</li>
+              <li>API</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>Top Accounts</li>
+              <li>Hashtags</li>
+              <li>Locations</li>
+            </ul>
+            <p>© 2021 Instagram from uwuxia</p>
+          </div>
+        </div>
         </div> : <Instagram404 />
       }
     </Router>

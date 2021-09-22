@@ -1463,7 +1463,7 @@ body {
 
 .InstagramProfile .nav {
   border-top: 1px solid #dbdbdb;
-  width: 60%;
+  width: 64.5%;
   margin: auto;
   margin-top: 3em;
 }
@@ -1609,6 +1609,50 @@ body {
 .InstagramProfile .u-profile-posts .explore-post .img-overlay span {
   margin-left: 1em;
   font-weight: 600;
+}
+
+.footer-profile {
+  font-size: 12px;
+  color: #8e8e8e;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.footer-profile p {
+  font-size: 12px !important;
+}
+
+.footer-profile .cont {
+  width: 32.5%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer-profile .cont ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+
+.footer-profile .cont ul li {
+  cursor: pointer;
 }
 
 .Instagram404 {

@@ -30,9 +30,9 @@ class App extends React.Component {
                 <Route exact path="/accounts/activity/" component={InstagramActivity} />
                 <Route exact path="/explore/" component={InstagramExplore} />
                 <Route path="/profile/" component={InstagramProfile} />
-                <Route exact path="/p/:postId/" component={InstagramPost} />
-                <Route exact path="/:username" component={Profile} />
-                <Route component={Instagram404} />
+                <Route path="/:username" component={Profile} />
+                <Route exact path="/p/:postId" component={InstagramPost} />
+                <Route path="*" component={Instagram404} />
             </Switch>
         </div>
       </Router>
