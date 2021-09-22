@@ -235,6 +235,7 @@ const Profile = () => {
             </Switch>
           </div>
           <br />
+          <br />
           <div className="footer-profile">
             <div className="cont">
               <ul>
