@@ -1,97 +1,100 @@
 .header {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 3.375em;
-    transition: 2s;
-    box-sizing: border-box;
-    border-bottom: 1px solid $border;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3.375em;
+  transition: 2s;
+  box-sizing: border-box;
+  border-bottom: 1px solid $border;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  nav {
+    width: 61.5%;
+    margin: auto;
     display: flex;
     align-items: center;
-    z-index: 1;
-    nav {
-        width: 61.5%;
-        margin: auto;
+    .logo {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      a {
+        margin-top: 0.75em;
+        width: 100%;
+        height: 100%;
+        img {
+          cursor: pointer;
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .search-bar {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #search-label {
         display: flex;
         align-items: center;
-        .logo {
-            flex: 2;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            a {
-                margin-top: .75em;
-                width: 100%;
-                height: 100%;
-                img {
-                    cursor: pointer;
-                    max-height: 100%;
-                    max-width: 100%;
-                    object-fit: contain;
-                }
-            }
+        justify-content: center;
+        svg {
+          margin-right: 0.25em;
         }
-        .search-bar {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            #search-label {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                svg {
-                    margin-right: .25em;
-                }
-            }
-            .search {
-                background-color: $background;
-                color: #8e8e8e;
-                border: 1px solid $border;
-                border-radius: 3px;
-                font-size: 14px;
-                padding: .25em 0.3125em;
-                width: 200px;
-                cursor: text;
-                text-align: center;
-                p { font-weight: 300; }
-                input {
-                    display: none;
-                    width: 100%;
-                    background-color: $background;
-                    color: #000;
-                    border: none;
-                    height: 100%;
-                    outline: none;
-                    box-sizing: border-box;
-                    padding: 0.0625em 0.25em;
-                }
-            }
+      }
+      .search {
+        background-color: $background;
+        color: #8e8e8e;
+        border: 1px solid $border;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 0.25em 0.3125em;
+        width: 200px;
+        cursor: text;
+        text-align: center;
+        p {
+          font-weight: 300;
         }
-        .nav {
-            flex: 2;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            ul {
-                width: 55%;
-                margin-top: 0.375em;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                svg, img {
-                    height: 23px;
-                    width: 22px;
-                    cursor: pointer;
-                }
-                img {
-                    border-radius: 50%;
-                    width: 23px;
-                    object-fit: cover;
-                }
-            }
+        input {
+          display: none;
+          width: 100%;
+          background-color: $background;
+          color: #000;
+          border: none;
+          height: 100%;
+          outline: none;
+          box-sizing: border-box;
+          padding: 0.0625em 0.25em;
         }
+      }
     }
+    .nav {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      ul {
+        width: 55%;
+        margin-top: 0.375em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        svg,
+        img {
+          height: 23px;
+          width: 22px;
+          cursor: pointer;
+        }
+        img {
+          border-radius: 50%;
+          width: 23px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }

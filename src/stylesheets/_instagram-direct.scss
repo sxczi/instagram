@@ -1,128 +1,131 @@
 .dms {
-    width: 61.5%;
-    height: 87.25vh;
-    margin: auto;
-    margin-top: 3.375em + 1.25em;
-    border-radius: 3px;
-    border: 1px solid $border;
-    background-color: #fff;
-    max-width: 935px;
-    display: flex;
-    align-items: center;
-    .left {
-        flex: 1.2;
-        height: 100%;
-        width: 100%;
-        border-right: 1px solid $border;
-        .left-header {
-            border-bottom: 1px solid $border;
-            height: 8vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .left {
-                flex: 4;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                border: none;
-                h1 {
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin-right: .3em;
-                    margin-left: 2em;
-                }
-                svg { transform: rotate(180deg) scaleX(-1); margin-top: .25em; }
-            }
-            .right {
-                flex: .9;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: none;
-            }
-        }
-        .chats-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .chat {
-                margin-top: .5em;
-                width: 100%;
-                display: flex;
-                padding: 7px 0;
-                align-items: center;
-                cursor: pointer;
-                &:hover {
-                    background: #EFEFEF;
-                }
-                .left {
-                    flex: 1.25;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: none;
-                    img {
-                        height: 56px;
-                        width: 56px;
-                        object-fit: contain;
-                        border-radius: 50%;
-                    }
-                }
-                .right {
-                    flex: 4;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    h1 {
-                        font-size: 14px;
-                        font-weight: 400;
-                    }
-                    p {
-                        font-size: 14px;
-                        color: #8e8e8e;
-                        .dot {
-                            font-weight: 600;
-                            color: #262626;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .right {
-        flex: 2;
-        height: 100%;
-        width: 100%;
+  width: 61.5%;
+  height: 87.25vh;
+  margin: auto;
+  margin-top: 3.375em + 1.25em;
+  border-radius: 3px;
+  border: 1px solid $border;
+  background-color: #fff;
+  max-width: 935px;
+  display: flex;
+  align-items: center;
+  .left {
+    flex: 1.2;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid $border;
+    .left-header {
+      border-bottom: 1px solid $border;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .left {
+        flex: 4;
         display: flex;
         justify-content: center;
         align-items: center;
-        .cont {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            h1 {
-                font-size: 22px;
-                font-weight: 300;
-                margin-bottom: .25em;
-            }
-            p {
-                font-size: 14px;
-                font-weight: 500;
-                margin-bottom: 1.25em;
-            }
-            button {
-                color: white;
-                background-color: #0095F6;
-                padding: 5px 9px;
-                border: none;
-                outline: none;
-                font-weight: 500;
-                cursor: pointer;
-                border-radius: 5px;
-            }
+        text-align: center;
+        border: none;
+        h1 {
+          font-size: 16px;
+          font-weight: 500;
+          margin-right: 0.3em;
+          margin-left: 2em;
         }
+        svg {
+          transform: rotate(180deg) scaleX(-1);
+          margin-top: 0.25em;
+        }
+      }
+      .right {
+        flex: 0.9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
     }
+    .chats-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .chat {
+        margin-top: 0.5em;
+        width: 100%;
+        display: flex;
+        padding: 7px 0;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          background: #efefef;
+        }
+        .left {
+          flex: 1.25;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          img {
+            height: 56px;
+            width: 56px;
+            object-fit: contain;
+            border-radius: 50%;
+          }
+        }
+        .right {
+          flex: 4;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          h1 {
+            font-size: 14px;
+            font-weight: 400;
+          }
+          p {
+            font-size: 14px;
+            color: #8e8e8e;
+            .dot {
+              font-weight: 600;
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 0.25em;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 1.25em;
+      }
+      button {
+        color: white;
+        background-color: #0095f6;
+        padding: 5px 9px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
 }

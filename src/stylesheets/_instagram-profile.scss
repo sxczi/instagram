@@ -1,220 +1,225 @@
 .InstagramProfile {
-    margin-top: 3.375em + 2em;
-    .cont {
-        width: 60%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        .left {
-            flex: 1.25;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                height: 150px;
-                width: 150px;
-                border-radius: 50%;
-                object-fit: contain;
-            }
-        }
-        .right {
-            flex: 3;
-            height: 100%;
-            .right-header {
-                width: 45%;
-                display: flex;
-                align-items: center;
-                margin-bottom: 1em;
-                h1 {
-                    font-size: 28px;
-                    color: rgb(38, 38, 38);
-                    font-weight: 300;
-                    margin-right: .75em;
-                } 
-                .follow {
-                    background-color: rgb(0, 149, 246);
-                    color: white;
-                    border: none;
-                    font-size: 14px;
-                    line-height: 18px;
-                    font-weight: 600;
-                }
-                button {
-                    margin-right: 1em;
-                    padding: 5px 9px;
-                    border: 1px solid $border;
-                    font-weight: 500;
-                    outline: none;
-                    background-color: transparent;
-                    border-radius: 4px;
-                    cursor: pointer;
-                }
-                svg {
-                    cursor: pointer;
-                }
-            }
-            .followers-bar {
-                width: 45%;
-                display: flex;
-                align-items: center;
-                margin-bottom: 1em;
-                justify-content: space-between;
-                p {
-                    cursor: pointer;
-                    strong {
-                        font-weight: 500;
-                    }
-                }
-            }
-            .bio {
-                width: 40%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                h1 {
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin-bottom: .25em;
-                }
-            }
-        }
-    }
-    .nav {
-        border-top: 1px solid $border;
-        width: 64.5%;
-        margin: auto;
-        margin-top: 3em;
-        .nav-cont {
-            width: 50%;
-            margin: auto;
-            ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                list-style: none;
-                .link {
-                    color: #262626;
-                }
-                li {
-                    padding-top: 15px;
-                    // border-top: 1.5px solid black;
-                    a {
-                        display: flex;
-                        align-items: center;
-                        text-decoration: none;
-                        color: #8e8e8e;
-                        span {
-                            color: inherit;
-                            font-size: 13px;
-                            font-weight: 500;
-                            letter-spacing: 1px;
-                        }
-                        svg {
-                            margin-right: .4em;
-                            color: #000;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .container {
-        text-align: center;
-        .channel, .tagged, .saved, .posts {
-            margin-top: 7em;
-            h1 {
-                font-size: 28px;
-                font-weight: 300;
-                margin-bottom: .5em;
-            }
-            p {
-                font-size: 14px;
-                margin-bottom: 1.5em;
-            }
-            button {
-                cursor: pointer;
-                padding: 5px 16px;
-                background-color: #0095f6;
-                color: #fff;
-                border-radius: 3px;
-                border: none;
-                outline: none;
-                font-weight: 500;
-            }
-        }
-    }
-
-    .u-profile-posts {
-        width: 65%;
-        margin: 1.5em auto;
-        max-width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .explore-post {
-            margin-bottom: 1.5em;
-            position: relative;
-            flex-basis: 30%;
-            cursor: pointer;
-            &:hover {
-                .img-overlay {
-                    display: flex !important;
-                }
-            }
-
-            img {
-                width: 293px;
-                border-radius: 1px;
-                height: 293px;
-                object-fit: cover;
-            }
-
-            .img-overlay {
-                display: none !important;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.3);
-                color: white;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                span {
-                    margin-left: 1em;
-                    font-weight: 600;
-                }
-            }
-        }
-    }
-}
-
-.footer-profile {
-    font-size: 12px;
-    color: #8e8e8e;
-    width: 100%;
+  margin-top: 3.375em + 2em;
+  .cont {
+    width: 60%;
     margin: auto;
-    margin-bottom: 3em;
-    p {
-        font-size: 12px !important;
+    display: flex;
+    align-items: center;
+    .left {
+      flex: 1.25;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: contain;
+      }
     }
-    .cont {
-        width: 32.5%;
-        margin: auto;
+    .right {
+      flex: 3;
+      height: 100%;
+      .right-header {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+        h1 {
+          font-size: 28px;
+          color: rgb(38, 38, 38);
+          font-weight: 300;
+          margin-right: 0.75em;
+        }
+        .follow {
+          background-color: rgb(0, 149, 246);
+          color: white;
+          border: none;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 600;
+        }
+        button {
+          margin-right: 1em;
+          padding: 5px 9px;
+          border: 1px solid $border;
+          font-weight: 500;
+          outline: none;
+          background-color: transparent;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        svg {
+          cursor: pointer;
+        }
+      }
+      .followers-bar {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+        justify-content: space-between;
+        p {
+          cursor: pointer;
+          strong {
+            font-weight: 500;
+          }
+        }
+      }
+      .bio {
+        width: 40%;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
-        ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            // align-items: center;
-            list-style: none;
-            margin-bottom: 1.5em;
-            li { cursor: pointer; }
+        h1 {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 0.25em;
         }
+      }
     }
+  }
+  .nav {
+    border-top: 1px solid $border;
+    width: 64.5%;
+    margin: auto;
+    margin-top: 3em;
+    .nav-cont {
+      width: 50%;
+      margin: auto;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        .link {
+          color: #262626;
+        }
+        li {
+          padding-top: 15px;
+          // border-top: 1.5px solid black;
+          a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #8e8e8e;
+            span {
+              color: inherit;
+              font-size: 13px;
+              font-weight: 500;
+              letter-spacing: 1px;
+            }
+            svg {
+              margin-right: 0.4em;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container {
+    text-align: center;
+    .channel,
+    .tagged,
+    .saved,
+    .posts {
+      margin-top: 7em;
+      h1 {
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 0.5em;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 1.5em;
+      }
+      button {
+        cursor: pointer;
+        padding: 5px 16px;
+        background-color: #0095f6;
+        color: #fff;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .u-profile-posts {
+    width: 65%;
+    margin: 1.5em auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .explore-post {
+      margin-bottom: 1.5em;
+      position: relative;
+      flex-basis: 30%;
+      cursor: pointer;
+      &:hover {
+        .img-overlay {
+          display: flex !important;
+        }
+      }
+
+      img {
+        width: 293px;
+        border-radius: 1px;
+        height: 293px;
+        object-fit: cover;
+      }
+
+      .img-overlay {
+        display: none !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin-left: 1em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.footer-profile {
+  font-size: 12px;
+  color: #8e8e8e;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3em;
+  p {
+    font-size: 12px !important;
+  }
+  .cont {
+    width: 32.5%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      list-style: none;
+      margin-bottom: 1.5em;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
 }

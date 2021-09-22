@@ -3,10 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 interface PropTypes {
-    imgUrl: string;
-    postId: string;
-    comments: number;
-    likes: number;
+  imgUrl: string;
+  postId: string;
+  comments: number;
+  likes: number;
 }
 
 class Post extends React.Component<PropTypes> {

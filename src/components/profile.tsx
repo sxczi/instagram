@@ -3,10 +3,8 @@ import { useParams, useLocation } from "react-router";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import Footer from "./footer";
-
 import Instagram404 from "./pages/Instagram404";
-import Post from './explorePost';
+import Post from "./explorePost";
 
 const Profile = () => {
   const handleNavStyling = (e: any) => {
@@ -60,10 +58,10 @@ const Profile = () => {
         (element as HTMLElement).style.borderTop = "none";
       });
 
-      element.setAttribute("fill", "#262626");
-      element.parentElement.querySelector("span").classList.add("link");
-      element.parentElement.parentElement.style.borderTop = "1px solid black";      
-  }
+    element.setAttribute("fill", "#262626");
+    element.parentElement.querySelector("span").classList.add("link");
+    element.parentElement.parentElement.style.borderTop = "1px solid black";
+  };
 
   const [posts, setPosts] = useState([
     {
@@ -72,7 +70,7 @@ const Profile = () => {
       comments: 0,
       postId: "",
     },
-  ])
+  ]);
 
   const { username } = useParams<{ username: string }>();
   const location = useLocation();
@@ -93,33 +91,27 @@ const Profile = () => {
 
     (async () => {
       const data = await fetch("/data/explore.json");
-    const response = await data.json();
-  
-    setPosts(response);
+      const response = await data.json();
+
+      setPosts(response);
     })();
 
     switch (location.pathname) {
       case `/${username}/`:
-        handleNavStylingLoad(
-          document.getElementById('posts-svg')
-        )
+        handleNavStylingLoad(document.getElementById("posts-svg"));
         break;
       case `/${username}/channel/`:
-        handleNavStylingLoad(
-          document.getElementById('channel-svg')
-        )
+        handleNavStylingLoad(document.getElementById("channel-svg"));
         break;
       case `/${username}/tagged/`:
-        handleNavStylingLoad(
-          document.getElementById('tagged-svg')
-        )
+        handleNavStylingLoad(document.getElementById("tagged-svg"));
     }
   }, []);
 
   return (
     <Router>
-      {
-          username === 'qassimsoleimani' ? <div className="InstagramProfile">
+      {username === "qassimsoleimani" ? (
+        <div className="InstagramProfile">
           <div className="cont">
             <div className="left">
               <img src={profile.pfpUrl} draggable="false" alt="" />
@@ -128,7 +120,35 @@ const Profile = () => {
               <div className="right-header">
                 <h1>{profile.username}</h1>
                 <button className="follow">Follow</button>
-                <svg aria-label="More options" fill="#262626" height="16" viewBox="0 0 48 48" width="16"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
+                <svg
+                  aria-label="More options"
+                  fill="#262626"
+                  height="16"
+                  viewBox="0 0 48 48"
+                  width="16"
+                >
+                  <circle
+                    clip-rule="evenodd"
+                    cx="8"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="24"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                  <circle
+                    clip-rule="evenodd"
+                    cx="40"
+                    cy="24"
+                    fill-rule="evenodd"
+                    r="4.5"
+                  ></circle>
+                </svg>
               </div>
               <div className="followers-bar">
                 <p>
@@ -216,36 +236,43 @@ const Profile = () => {
           </div>
           <br />
           <div className="footer-profile">
-          <div className="cont">
-            <ul>
-              <li>About</li>
-              <li>Blog</li>
-              <li>Jobs</li>
-              <li>Help</li>
-              <li>API</li>
-              <li>Privacy</li>
-              <li>Terms</li>
-              <li>Top Accounts</li>
-              <li>Hashtags</li>
-              <li>Locations</li>
-            </ul>
-            <p>© 2021 Instagram from uwuxia</p>
+            <div className="cont">
+              <ul>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Jobs</li>
+                <li>Help</li>
+                <li>API</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Top Accounts</li>
+                <li>Hashtags</li>
+                <li>Locations</li>
+              </ul>
+              <p>© 2021 Instagram from uwuxia</p>
+            </div>
           </div>
         </div>
-        </div> : <Instagram404 />
-      }
+      ) : (
+        <Instagram404 />
+      )}
     </Router>
   );
 };
 
 const Posts = (props: any) => {
-  return <div className="u-profile-posts">
-    {
-      props.posts.map((post: any) => (
-        <Post imgUrl={post.imgUrl} postId={post.postId} likes={post.likes} comments={post.comments} />
-      ))
-    }
-  </div>;
+  return (
+    <div className="u-profile-posts">
+      {props.posts.map((post: any) => (
+        <Post
+          imgUrl={post.imgUrl}
+          postId={post.postId}
+          likes={post.likes}
+          comments={post.comments}
+        />
+      ))}
+    </div>
+  );
 };
 
 const Channel = () => {

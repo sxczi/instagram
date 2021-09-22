@@ -1,343 +1,356 @@
 @media screen and (max-width: 1450px) {
-    .main-container, .header nav, .dms {
-        width: 65%;
-    } 
+  .main-container,
+  .header nav,
+  .dms {
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 1390px) {
-    .main-container, .header nav, .dms {
-        width: 70%;
-    }
+  .main-container,
+  .header nav,
+  .dms {
+    width: 70%;
+  }
 
-    .footer-main {
-        .cont {
-            width: 50%;
-        }
+  .footer-main {
+    .cont {
+      width: 50%;
     }
+  }
 
-    .InstagramActivity {
-        .activity {
-            width: 45%;
-        }
+  .InstagramActivity {
+    .activity {
+      width: 45%;
     }
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .main-container, .header nav, .dms {
-        width: 75%;
-    }
+  .main-container,
+  .header nav,
+  .dms {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .main-container, .header nav, .dms {
-        width: 80%;
-    }
+  .main-container,
+  .header nav,
+  .dms {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .main-container, .header nav, .dms {
-        width: 85%;
-    }
+  .main-container,
+  .header nav,
+  .dms {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1050px) {
-    .main-container, .header nav, .dms {
-        width: 92.5%;
-    }
+  .main-container,
+  .header nav,
+  .dms {
+    width: 92.5%;
+  }
 
-    .footer-main {
-        .cont {
-            width: 55%;
-        }
+  .footer-main {
+    .cont {
+      width: 55%;
     }
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .side-nav {
-        display: none;
-    }
+  .side-nav {
+    display: none;
+  }
 
-    .header nav {
-        width: 92.5%;
-        .nav {
-            ul {
-                width: 60%;
-            }
-        }
+  .header nav {
+    width: 92.5%;
+    .nav {
+      ul {
+        width: 60%;
+      }
     }
+  }
 
-    .main-container {
-        display: flex;
-        justify-content: center;
-        width: 75%;
-    }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
 
-    .InstagramActivity {
-        .activity {
-            width: 50%;
-        }
+  .InstagramActivity {
+    .activity {
+      width: 50%;
     }
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .header nav {
-        width: 92.5%;
-        .nav {
-            ul {
-                width: 70%;
+  .header nav {
+    width: 92.5%;
+    .nav {
+      ul {
+        width: 70%;
+      }
+    }
+  }
+
+  .footer-main {
+    .cont {
+      width: 60%;
+    }
+  }
+
+  .InstagramActivity {
+    .activity {
+      width: 60%;
+    }
+  }
+
+  .dms {
+    .left {
+      .chats-list {
+        .chat {
+          .left {
+            img {
+              height: 40px;
+              width: 40px;
             }
+          }
         }
+      }
     }
-
-    .footer-main {
-        .cont {
-            width: 60%;
-        }
-    }
-
-    .InstagramActivity {
-        .activity {
-            width: 60%;
-        }
-    }
-
-    .dms {
-        .left {
-            .chats-list {
-                .chat {
-                    .left {
-                        img {
-                            height: 40px;
-                            width: 40px;
-                        }
-                        
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 760px) {
-    .header nav {
-        .nav {
-            ul {
-                width: 75%;
-            }
-        }
+  .header nav {
+    .nav {
+      ul {
+        width: 75%;
+      }
     }
+  }
 
-    .footer-main {
-        .cont {
-            width: 65%;
-        }
+  .footer-main {
+    .cont {
+      width: 65%;
     }
+  }
 }
 
 @media screen and (max-width: 730px) {
-    .header nav {
-        .nav {
-            ul {
-                width: 80%;
-            }
-        }
+  .header nav {
+    .nav {
+      ul {
+        width: 80%;
+      }
     }
+  }
 
-    .main-container {
-        width: 85%;
-    }
+  .main-container {
+    width: 85%;
+  }
 
-    .InstagramActivity {
-        .activity {
-            width: 65%;
-        }
+  .InstagramActivity {
+    .activity {
+      width: 65%;
     }
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .dms {
-        .cont {
-            text-align: center;
-        }
+  .dms {
+    .cont {
+      text-align: center;
     }
+  }
 
-    #root > div > div.dms > div.left > div.left-header > div.right > svg {
-        display: none;
-    }
+  #root > div > div.dms > div.left > div.left-header > div.right > svg {
+    display: none;
+  }
 
-    .header nav {
-        .nav {
-            ul {
-                width: 85%;
-            }
-        }
+  .header nav {
+    .nav {
+      ul {
+        width: 85%;
+      }
     }
-    .main-container {
-        width: 90%;
-    }
+  }
+  .main-container {
+    width: 90%;
+  }
 
-    .footer-main {
-        display: none;
-    }
+  .footer-main {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .header nav {
-        .search-bar {
-            display: none;
-        }
-
-        .logo {
-            flex: 1;
-        }
-
-        .nav {
-            flex: 1;
-            ul {
-                width: 70%;
-            }
-        }
+  .header nav {
+    .search-bar {
+      display: none;
     }
 
-    .main-container {
-        width: 92.5%;
+    .logo {
+      flex: 1;
     }
 
-    .InstagramActivity {
-        .activity {
-            width: 70%;
-        }
+    .nav {
+      flex: 1;
+      ul {
+        width: 70%;
+      }
     }
+  }
+
+  .main-container {
+    width: 92.5%;
+  }
+
+  .InstagramActivity {
+    .activity {
+      width: 70%;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .header nav {
-        .nav {
-            ul {
-                width: 90%;
+  .header nav {
+    .nav {
+      ul {
+        width: 90%;
+      }
+    }
+  }
+
+  .main-container {
+    margin-top: 3.375em;
+    width: 100%;
+    #postimg {
+      height: 550px;
+    }
+
+    .posts-stories {
+      .stories {
+        border: none;
+        background: inherit;
+        margin-bottom: 0.25em;
+      }
+
+      .post {
+        .post-comments {
+          border-left: none;
+          border-left: none;
+        }
+        .post-header {
+          border-left: none;
+          border-right: none;
+          .header-cont {
+            .post-pfp,
+            .post-more {
+              flex: 1.4 !important;
             }
+          }
         }
+      }
     }
+  }
 
-    .main-container {
-        margin-top: 3.375em;
-        width: 100%;
-        #postimg {
-            height: 550px;
-        }
-
-        .posts-stories {
-            .stories {
-                border: none;
-                background: inherit;
-                margin-bottom: .25em;
-            }
-    
-            .post {
-                .post-comments {
-                    border-left: none;
-                    border-left: none;
-                }
-                .post-header {
-                    border-left: none;
-                    border-right: none;
-                    .header-cont {
-                        .post-pfp, .post-more {
-                            flex: 1.4 !important;
-                        }
-                    }
-                }
-            }
-        }
+  .dms {
+    #dms-left,
+    #dms-right {
+      flex: 1 !important;
     }
+  }
 
-    .dms {
-        #dms-left, #dms-right {
-            flex: 1 !important;
-        }
+  .InstagramActivity {
+    .activity {
+      width: 80%;
     }
-
-    .InstagramActivity {
-        .activity {
-            width: 80%;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .dms {
-        .left {
-            .chats-list {
-                .chat {
-                    .left {
-                        flex: 2;
-                    }
-                }
-            }
+  .dms {
+    .left {
+      .chats-list {
+        .chat {
+          .left {
+            flex: 2;
+          }
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .header nav {
-        .nav {
-            ul {
-                width: 100%;
+  .header nav {
+    .nav {
+      ul {
+        width: 100%;
+      }
+    }
+  }
+
+  .post {
+    margin-bottom: 1em !important;
+    .comment-input {
+      display: none;
+    }
+  }
+
+  .footer-main {
+    display: none;
+  }
+
+  .dms {
+    #dms-right {
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: normal;
+      }
+      button {
+        font-size: 11px;
+        padding: 4px 6px;
+      }
+    }
+
+    .left {
+      .chats-list {
+        .chat {
+          .left {
+            img {
+              height: 40px;
+              width: 40px;
             }
-        }
-    }
-
-    .post {
-        margin-bottom: 1em !important;
-        .comment-input {
-            display: none;
-        }
-    }
-
-    .footer-main {
-        display: none;
-    }
-
-    .dms {
-        #dms-right {
+          }
+          .right {
             h1 {
-                font-size: 18px;
-            } 
+              font-size: 12px;
+            }
             p {
-                font-size: 12px;
-                font-weight: normal;
+              font-size: 12px;
             }
-            button {
-                font-size: 11px;
-                padding: 4px 6px;
-            }
+          }
         }
-
-        .left {
-            .chats-list {
-                .chat {
-                    .left {
-                        img {
-                            height: 40px;
-                            width: 40px;
-                        }
-                    }
-                    .right {
-                        h1 {
-                            font-size: 12px;
-                        }
-                        p {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 
-    .InstagramActivity {
-        .activity {
-            width: 90%;
-        }
+  .InstagramActivity {
+    .activity {
+      width: 90%;
     }
+  }
 }

@@ -59,7 +59,7 @@ body {
 }
 
 .header nav .logo a {
-  margin-top: .75em;
+  margin-top: 0.75em;
   width: 100%;
   height: 100%;
 }
@@ -100,7 +100,7 @@ body {
 }
 
 .header nav .search-bar #search-label svg {
-  margin-right: .25em;
+  margin-right: 0.25em;
 }
 
 .header nav .search-bar .search {
@@ -109,7 +109,7 @@ body {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 14px;
-  padding: .25em 0.3125em;
+  padding: 0.25em 0.3125em;
   width: 200px;
   cursor: text;
   text-align: center;
@@ -162,7 +162,8 @@ body {
   list-style: none;
 }
 
-.header nav .nav ul svg, .header nav .nav ul img {
+.header nav .nav ul svg,
+.header nav .nav ul img {
   height: 23px;
   width: 22px;
   cursor: pointer;
@@ -356,7 +357,7 @@ body {
 .main-container .posts-stories .posts .post .post-header .header-cont .post-username h2 {
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: .15em;
+  margin-bottom: 0.15em;
 }
 
 .main-container .posts-stories .posts .post .post-header .header-cont .post-username h2 a {
@@ -414,7 +415,7 @@ body {
 .main-container .posts-stories .posts .post .post-comments .buttons-header {
   width: 95%;
   margin: auto;
-  padding-top: .7em;
+  padding-top: 0.7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,8 +467,8 @@ body {
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list {
   width: 95%;
   margin: auto;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list h2 {
@@ -480,7 +481,7 @@ body {
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list .desc {
-  margin-top: .5em;
+  margin-top: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,7 +491,7 @@ body {
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list .desc h2 {
-  margin-right: .45em;
+  margin-right: 0.45em;
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list .list a {
@@ -506,15 +507,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: .15em;
+  margin-bottom: 0.15em;
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list .list .comments .comment-preview h2 {
-  margin-right: .45em;
+  margin-right: 0.45em;
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-desc-list .list #post-date {
-  margin-top: .75em;
+  margin-top: 0.75em;
   margin-bottom: 1em;
   font-size: 10px;
   color: #8e8e8e;
@@ -544,7 +545,7 @@ body {
 
 .main-container .posts-stories .posts .post .post-comments .comment-input .cont .left input {
   width: 100%;
-  padding: .5em .25em;
+  padding: 0.5em 0.25em;
   border: none;
   outline: none;
 }
@@ -564,7 +565,7 @@ body {
 }
 
 .main-container .posts-stories .posts .post .post-comments .comment-input .cont .right a {
-  margin-right: .75em;
+  margin-right: 0.75em;
   color: #0095f6;
   font-size: 14px;
   text-decoration: none;
@@ -621,7 +622,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: .5em;
+  margin-left: 0.5em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -704,7 +705,7 @@ body {
 }
 
 .main-container .side-nav .suggestions .sug-header .left h2 {
-  margin-left: .7em;
+  margin-left: 0.7em;
   font-size: 14px;
   color: #8e8e8e;
   font-weight: 500;
@@ -755,7 +756,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
 }
 
 .main-container .side-nav .suggestions .sug-body .suggestion .pfp {
@@ -847,7 +848,7 @@ body {
   color: #c7c7c7;
   font-size: 11px;
   margin-top: 2em;
-  margin-left: .75em;
+  margin-left: 0.75em;
 }
 
 .main-container .side-nav .footer #top {
@@ -921,20 +922,20 @@ body {
 .dms .left .left-header .left h1 {
   font-size: 16px;
   font-weight: 500;
-  margin-right: .3em;
+  margin-right: 0.3em;
   margin-left: 2em;
 }
 
 .dms .left .left-header .left svg {
   -webkit-transform: rotate(180deg) scaleX(-1);
           transform: rotate(180deg) scaleX(-1);
-  margin-top: .25em;
+  margin-top: 0.25em;
 }
 
 .dms .left .left-header .right {
-  -webkit-box-flex: .9;
-      -ms-flex: .9;
-          flex: .9;
+  -webkit-box-flex: 0.9;
+      -ms-flex: 0.9;
+          flex: 0.9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,7 +962,7 @@ body {
 }
 
 .dms .left .chats-list .chat {
-  margin-top: .5em;
+  margin-top: 0.5em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,7 +975,7 @@ body {
 }
 
 .dms .left .chats-list .chat:hover {
-  background: #EFEFEF;
+  background: #efefef;
 }
 
 .dms .left .chats-list .chat .left {
@@ -1068,7 +1069,7 @@ body {
 .dms .right .cont h1 {
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .dms .right .cont p {
@@ -1079,7 +1080,7 @@ body {
 
 .dms .right .cont button {
   color: white;
-  background-color: #0095F6;
+  background-color: #0095f6;
   padding: 5px 9px;
   border: none;
   outline: none;
@@ -1225,7 +1226,7 @@ body {
 }
 
 .InstagramActivity .activity .activity-body {
-  margin-top: .75em;
+  margin-top: 0.75em;
   width: 100%;
 }
 
@@ -1237,7 +1238,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
 }
 
 .InstagramActivity .activity .activity-body .profile .img {
@@ -1282,7 +1283,7 @@ body {
 .InstagramActivity .activity .activity-body .profile .username h1 {
   font-size: 14px;
   font-weight: 500;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .InstagramActivity .activity .activity-body .profile .username h1 a {
@@ -1296,13 +1297,13 @@ body {
 
 .InstagramActivity .activity .activity-body .profile .username p {
   font-size: 14px;
-  margin-left: .25em;
+  margin-left: 0.25em;
 }
 
 .InstagramActivity .activity .activity-body .profile .username span {
   font-size: 14px;
   color: #8e8e8e;
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 .InstagramActivity .activity .activity-body .profile .follow {
@@ -1322,7 +1323,7 @@ body {
 
 .InstagramActivity .activity .activity-body .profile .follow button {
   color: white;
-  background-color: #0095F6;
+  background-color: #0095f6;
   padding: 5px 9px;
   border: none;
   font-size: 14px;
@@ -1392,7 +1393,7 @@ body {
   font-size: 28px;
   color: #262626;
   font-weight: 300;
-  margin-right: .75em;
+  margin-right: 0.75em;
 }
 
 .InstagramProfile .cont .right .right-header .follow {
@@ -1458,7 +1459,7 @@ body {
 .InstagramProfile .cont .right .bio h1 {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .InstagramProfile .nav {
@@ -1513,7 +1514,7 @@ body {
 }
 
 .InstagramProfile .nav .nav-cont ul li a svg {
-  margin-right: .4em;
+  margin-right: 0.4em;
   color: #000;
 }
 
@@ -1521,22 +1522,34 @@ body {
   text-align: center;
 }
 
-.InstagramProfile .container .channel, .InstagramProfile .container .tagged, .InstagramProfile .container .saved, .InstagramProfile .container .posts {
+.InstagramProfile .container .channel,
+.InstagramProfile .container .tagged,
+.InstagramProfile .container .saved,
+.InstagramProfile .container .posts {
   margin-top: 7em;
 }
 
-.InstagramProfile .container .channel h1, .InstagramProfile .container .tagged h1, .InstagramProfile .container .saved h1, .InstagramProfile .container .posts h1 {
+.InstagramProfile .container .channel h1,
+.InstagramProfile .container .tagged h1,
+.InstagramProfile .container .saved h1,
+.InstagramProfile .container .posts h1 {
   font-size: 28px;
   font-weight: 300;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.InstagramProfile .container .channel p, .InstagramProfile .container .tagged p, .InstagramProfile .container .saved p, .InstagramProfile .container .posts p {
+.InstagramProfile .container .channel p,
+.InstagramProfile .container .tagged p,
+.InstagramProfile .container .saved p,
+.InstagramProfile .container .posts p {
   font-size: 14px;
   margin-bottom: 1.5em;
 }
 
-.InstagramProfile .container .channel button, .InstagramProfile .container .tagged button, .InstagramProfile .container .saved button, .InstagramProfile .container .posts button {
+.InstagramProfile .container .channel button,
+.InstagramProfile .container .tagged button,
+.InstagramProfile .container .saved button,
+.InstagramProfile .container .posts button {
   cursor: pointer;
   padding: 5px 16px;
   background-color: #0095f6;
@@ -2014,13 +2027,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-top: 1px solid #dbdbdb;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .Instagram-post .post-details .bottom .bottom-cont .cont {
   width: 90%;
   margin: auto;
-  margin-top: .75em;
+  margin-top: 0.75em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2065,13 +2078,17 @@ body {
 }
 
 @media screen and (max-width: 1450px) {
-  .main-container, .header nav, .dms {
+  .main-container,
+  .header nav,
+  .dms {
     width: 65%;
   }
 }
 
 @media screen and (max-width: 1390px) {
-  .main-container, .header nav, .dms {
+  .main-container,
+  .header nav,
+  .dms {
     width: 70%;
   }
   .footer-main .cont {
@@ -2083,25 +2100,33 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
-  .main-container, .header nav, .dms {
+  .main-container,
+  .header nav,
+  .dms {
     width: 75%;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .main-container, .header nav, .dms {
+  .main-container,
+  .header nav,
+  .dms {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .main-container, .header nav, .dms {
+  .main-container,
+  .header nav,
+  .dms {
     width: 85%;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  .main-container, .header nav, .dms {
+  .main-container,
+  .header nav,
+  .dms {
     width: 92.5%;
   }
   .footer-main .cont {
@@ -2230,7 +2255,7 @@ body {
   .main-container .posts-stories .stories {
     border: none;
     background: inherit;
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
   }
   .main-container .posts-stories .post .post-comments {
     border-left: none;
@@ -2240,12 +2265,14 @@ body {
     border-left: none;
     border-right: none;
   }
-  .main-container .posts-stories .post .post-header .header-cont .post-pfp, .main-container .posts-stories .post .post-header .header-cont .post-more {
+  .main-container .posts-stories .post .post-header .header-cont .post-pfp,
+  .main-container .posts-stories .post .post-header .header-cont .post-more {
     -webkit-box-flex: 1.4 !important;
         -ms-flex: 1.4 !important;
             flex: 1.4 !important;
   }
-  .dms #dms-left, .dms #dms-right {
+  .dms #dms-left,
+  .dms #dms-right {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 !important;
             flex: 1 !important;

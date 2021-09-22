@@ -38,7 +38,12 @@ class InstagramExplore extends React.Component<{}, stateTypes> {
       <div className="InstagramExplore">
         <div className="explore-posts">
           {this.state.posts.map((post) => (
-            <Post imgUrl={post.imgUrl} postId={post.postId} likes={post.likes} comments={post.comments} />
+            <Post
+              imgUrl={post.imgUrl}
+              postId={post.postId}
+              likes={post.likes}
+              comments={post.comments}
+            />
           ))}
         </div>
         <br />

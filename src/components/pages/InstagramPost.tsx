@@ -13,7 +13,7 @@ const InstagramPost = () => {
       likes: 56,
       age: "1w",
       comment: "OwO",
-    }
+    },
   ];
 
   return (

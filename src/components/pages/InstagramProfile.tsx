@@ -7,7 +7,13 @@ import Tagged from "./sub-pages/tagged";
 import Saved from "./sub-pages/saved";
 import Posts from "./sub-pages/posts";
 
-import { BrowserRouter as Router, Switch, Route, Link, withRouter } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter,
+} from "react-router-dom";
 
 interface ProfileState {
   profile: {
@@ -57,26 +63,18 @@ class InstagramProfile extends React.Component<any, ProfileState> {
 
   async componentDidMount() {
     switch (this.props.location.pathname) {
-        case '/profile/':
-          this.handleNavStylingLoad(
-            document.getElementById('posts-svg')
-          )
-          break;
-        case '/profile/channel/':
-          this.handleNavStylingLoad(
-            document.getElementById('channel-svg')
-          )
-          break;
-        case '/profile/tagged/':
-          this.handleNavStylingLoad(
-            document.getElementById('tagged-svg')
-          )
-          break;
-        case '/profile/saved/':
-          this.handleNavStylingLoad(
-              document.getElementById('saved-svg')
-          )
-      }
+      case "/profile/":
+        this.handleNavStylingLoad(document.getElementById("posts-svg"));
+        break;
+      case "/profile/channel/":
+        this.handleNavStylingLoad(document.getElementById("channel-svg"));
+        break;
+      case "/profile/tagged/":
+        this.handleNavStylingLoad(document.getElementById("tagged-svg"));
+        break;
+      case "/profile/saved/":
+        this.handleNavStylingLoad(document.getElementById("saved-svg"));
+    }
 
     const file = await fetch("/data/profile.json");
     const json = await file.json();

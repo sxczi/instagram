@@ -159,17 +159,16 @@
           text-transform: uppercase;
           margin-bottom: 1em;
         }
-        
       }
       .bottom-cont {
         display: flex;
         align-items: center;
         border-top: 1px solid $border;
-        margin-top: .5em;
+        margin-top: 0.5em;
         .cont {
           width: 90%;
           margin: auto;
-          margin-top: .75em;
+          margin-top: 0.75em;
           display: flex;
           align-items: center;
         }
